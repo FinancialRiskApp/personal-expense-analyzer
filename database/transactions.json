@@ -1,0 +1,4266 @@
+[
+  {
+    "id": 1,
+    "data": "2025-01-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 2,
+    "data": "2025-01-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 3,
+    "data": "2025-01-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 4,
+    "data": "2025-01-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 145,
+    "tipo": "saida"
+  },
+  {
+    "id": 5,
+    "data": "2025-01-05",
+    "descricao": "Salario CLT (janeiro/2025)",
+    "categoria": "Renda",
+    "valor": 4850,
+    "tipo": "entrada"
+  },
+  {
+    "id": 6,
+    "data": "2025-01-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 380,
+    "tipo": "saida"
+  },
+  {
+    "id": 7,
+    "data": "2025-01-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 8,
+    "data": "2025-01-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 9,
+    "data": "2025-01-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 10,
+    "data": "2025-01-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 11,
+    "data": "2025-01-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 12,
+    "data": "2025-01-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 13,
+    "data": "2025-01-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 89,
+    "tipo": "saida"
+  },
+  {
+    "id": 14,
+    "data": "2025-01-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 15,
+    "data": "2025-01-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 78,
+    "tipo": "saida"
+  },
+  {
+    "id": 16,
+    "data": "2025-01-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 350,
+    "tipo": "saida"
+  },
+  {
+    "id": 17,
+    "data": "2025-01-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 44,
+    "tipo": "saida"
+  },
+  {
+    "id": 18,
+    "data": "2025-01-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 21,
+    "tipo": "saida"
+  },
+  {
+    "id": 19,
+    "data": "2025-01-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 20,
+    "data": "2025-01-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 21,
+    "data": "2025-01-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 68,
+    "tipo": "saida"
+  },
+  {
+    "id": 22,
+    "data": "2025-01-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 23,
+    "data": "2025-01-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 34,
+    "tipo": "saida"
+  },
+  {
+    "id": 24,
+    "data": "2025-01-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 25,
+    "data": "2025-01-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 17,
+    "tipo": "saida"
+  },
+  {
+    "id": 26,
+    "data": "2025-01-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 45,
+    "tipo": "saida"
+  },
+  {
+    "id": 27,
+    "data": "2025-01-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 28,
+    "data": "2025-01-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 29,
+    "data": "2025-01-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 30,
+    "data": "2025-01-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 74,
+    "tipo": "saida"
+  },
+  {
+    "id": 31,
+    "data": "2025-01-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 32,
+    "data": "2025-01-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 39,
+    "tipo": "saida"
+  },
+  {
+    "id": 33,
+    "data": "2025-02-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 34,
+    "data": "2025-02-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 35,
+    "data": "2025-02-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 36,
+    "data": "2025-02-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 157,
+    "tipo": "saida"
+  },
+  {
+    "id": 37,
+    "data": "2025-02-05",
+    "descricao": "Salario CLT (fevereiro/2025)",
+    "categoria": "Renda",
+    "valor": 4970,
+    "tipo": "entrada"
+  },
+  {
+    "id": 38,
+    "data": "2025-02-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 402,
+    "tipo": "saida"
+  },
+  {
+    "id": 39,
+    "data": "2025-02-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 40,
+    "data": "2025-02-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 41,
+    "data": "2025-02-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 42,
+    "data": "2025-02-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 43,
+    "data": "2025-02-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 43,
+    "tipo": "saida"
+  },
+  {
+    "id": 44,
+    "data": "2025-02-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 45,
+    "data": "2025-02-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 99,
+    "tipo": "saida"
+  },
+  {
+    "id": 46,
+    "data": "2025-02-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 47,
+    "data": "2025-02-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 84,
+    "tipo": "saida"
+  },
+  {
+    "id": 48,
+    "data": "2025-02-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 390,
+    "tipo": "saida"
+  },
+  {
+    "id": 49,
+    "data": "2025-02-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 48,
+    "tipo": "saida"
+  },
+  {
+    "id": 50,
+    "data": "2025-02-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 51,
+    "data": "2025-02-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 115,
+    "tipo": "saida"
+  },
+  {
+    "id": 52,
+    "data": "2025-02-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 53,
+    "data": "2025-02-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 54,
+    "data": "2025-02-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 55,
+    "data": "2025-02-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 46,
+    "tipo": "saida"
+  },
+  {
+    "id": 56,
+    "data": "2025-02-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 57,
+    "data": "2025-02-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 20,
+    "tipo": "saida"
+  },
+  {
+    "id": 58,
+    "data": "2025-02-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 53,
+    "tipo": "saida"
+  },
+  {
+    "id": 59,
+    "data": "2025-02-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 80,
+    "tipo": "saida"
+  },
+  {
+    "id": 60,
+    "data": "2025-02-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 61,
+    "data": "2025-02-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 150,
+    "tipo": "saida"
+  },
+  {
+    "id": 62,
+    "data": "2025-03-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 63,
+    "data": "2025-03-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 64,
+    "data": "2025-03-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 65,
+    "data": "2025-03-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 169,
+    "tipo": "saida"
+  },
+  {
+    "id": 66,
+    "data": "2025-03-05",
+    "descricao": "Salario CLT (marco/2025)",
+    "categoria": "Renda",
+    "valor": 5090,
+    "tipo": "entrada"
+  },
+  {
+    "id": 67,
+    "data": "2025-03-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 424,
+    "tipo": "saida"
+  },
+  {
+    "id": 68,
+    "data": "2025-03-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 69,
+    "data": "2025-03-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 70,
+    "data": "2025-03-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 56,
+    "tipo": "saida"
+  },
+  {
+    "id": 71,
+    "data": "2025-03-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 72,
+    "data": "2025-03-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 73,
+    "data": "2025-03-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 74,
+    "data": "2025-03-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 109,
+    "tipo": "saida"
+  },
+  {
+    "id": 75,
+    "data": "2025-03-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 76,
+    "data": "2025-03-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 77,
+    "data": "2025-03-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 430,
+    "tipo": "saida"
+  },
+  {
+    "id": 78,
+    "data": "2025-03-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 79,
+    "data": "2025-03-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 27,
+    "tipo": "saida"
+  },
+  {
+    "id": 80,
+    "data": "2025-03-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 81,
+    "data": "2025-03-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 82,
+    "data": "2025-03-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 86,
+    "tipo": "saida"
+  },
+  {
+    "id": 83,
+    "data": "2025-03-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 64,
+    "tipo": "saida"
+  },
+  {
+    "id": 84,
+    "data": "2025-03-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 85,
+    "data": "2025-03-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 86,
+    "data": "2025-03-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 23,
+    "tipo": "saida"
+  },
+  {
+    "id": 87,
+    "data": "2025-03-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 61,
+    "tipo": "saida"
+  },
+  {
+    "id": 88,
+    "data": "2025-03-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 89,
+    "data": "2025-03-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 90,
+    "data": "2025-03-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 180,
+    "tipo": "saida"
+  },
+  {
+    "id": 91,
+    "data": "2025-03-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 92,
+    "tipo": "saida"
+  },
+  {
+    "id": 92,
+    "data": "2025-03-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 110,
+    "tipo": "saida"
+  },
+  {
+    "id": 93,
+    "data": "2025-03-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 61,
+    "tipo": "saida"
+  },
+  {
+    "id": 94,
+    "data": "2025-04-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 95,
+    "data": "2025-04-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 96,
+    "data": "2025-04-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 97,
+    "data": "2025-04-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 181,
+    "tipo": "saida"
+  },
+  {
+    "id": 98,
+    "data": "2025-04-05",
+    "descricao": "Salario CLT (abril/2025)",
+    "categoria": "Renda",
+    "valor": 4850,
+    "tipo": "entrada"
+  },
+  {
+    "id": 99,
+    "data": "2025-04-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 446,
+    "tipo": "saida"
+  },
+  {
+    "id": 100,
+    "data": "2025-04-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 101,
+    "data": "2025-04-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 35,
+    "tipo": "saida"
+  },
+  {
+    "id": 102,
+    "data": "2025-04-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 63,
+    "tipo": "saida"
+  },
+  {
+    "id": 103,
+    "data": "2025-04-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 104,
+    "data": "2025-04-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 105,
+    "data": "2025-04-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 106,
+    "data": "2025-04-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 89,
+    "tipo": "saida"
+  },
+  {
+    "id": 107,
+    "data": "2025-04-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 108,
+    "data": "2025-04-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 96,
+    "tipo": "saida"
+  },
+  {
+    "id": 109,
+    "data": "2025-04-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 470,
+    "tipo": "saida"
+  },
+  {
+    "id": 110,
+    "data": "2025-04-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 56,
+    "tipo": "saida"
+  },
+  {
+    "id": 111,
+    "data": "2025-04-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 21,
+    "tipo": "saida"
+  },
+  {
+    "id": 112,
+    "data": "2025-04-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 155,
+    "tipo": "saida"
+  },
+  {
+    "id": 113,
+    "data": "2025-04-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 114,
+    "data": "2025-04-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 115,
+    "data": "2025-04-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 116,
+    "data": "2025-04-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 117,
+    "data": "2025-04-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 118,
+    "data": "2025-04-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 119,
+    "data": "2025-04-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 69,
+    "tipo": "saida"
+  },
+  {
+    "id": 120,
+    "data": "2025-04-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 121,
+    "data": "2025-04-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 122,
+    "data": "2025-04-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 210,
+    "tipo": "saida"
+  },
+  {
+    "id": 123,
+    "data": "2025-04-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 101,
+    "tipo": "saida"
+  },
+  {
+    "id": 124,
+    "data": "2025-04-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 125,
+    "data": "2025-05-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 126,
+    "data": "2025-05-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 127,
+    "data": "2025-05-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 128,
+    "data": "2025-05-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 145,
+    "tipo": "saida"
+  },
+  {
+    "id": 129,
+    "data": "2025-05-05",
+    "descricao": "Salario CLT (maio/2025)",
+    "categoria": "Renda",
+    "valor": 4970,
+    "tipo": "entrada"
+  },
+  {
+    "id": 130,
+    "data": "2025-05-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 468,
+    "tipo": "saida"
+  },
+  {
+    "id": 131,
+    "data": "2025-05-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 132,
+    "data": "2025-05-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 133,
+    "data": "2025-05-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 134,
+    "data": "2025-05-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 135,
+    "data": "2025-05-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 43,
+    "tipo": "saida"
+  },
+  {
+    "id": 136,
+    "data": "2025-05-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 137,
+    "data": "2025-05-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 99,
+    "tipo": "saida"
+  },
+  {
+    "id": 138,
+    "data": "2025-05-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 139,
+    "data": "2025-05-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 78,
+    "tipo": "saida"
+  },
+  {
+    "id": 140,
+    "data": "2025-05-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 350,
+    "tipo": "saida"
+  },
+  {
+    "id": 141,
+    "data": "2025-05-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 142,
+    "data": "2025-05-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 143,
+    "data": "2025-05-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 144,
+    "data": "2025-05-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 145,
+    "data": "2025-05-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 68,
+    "tipo": "saida"
+  },
+  {
+    "id": 146,
+    "data": "2025-05-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 76,
+    "tipo": "saida"
+  },
+  {
+    "id": 147,
+    "data": "2025-05-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 34,
+    "tipo": "saida"
+  },
+  {
+    "id": 148,
+    "data": "2025-05-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 149,
+    "data": "2025-05-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 17,
+    "tipo": "saida"
+  },
+  {
+    "id": 150,
+    "data": "2025-05-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 151,
+    "data": "2025-05-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 80,
+    "tipo": "saida"
+  },
+  {
+    "id": 152,
+    "data": "2025-05-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 153,
+    "data": "2025-05-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 240,
+    "tipo": "saida"
+  },
+  {
+    "id": 154,
+    "data": "2025-05-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 74,
+    "tipo": "saida"
+  },
+  {
+    "id": 155,
+    "data": "2025-05-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 160,
+    "tipo": "saida"
+  },
+  {
+    "id": 156,
+    "data": "2025-05-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 50,
+    "tipo": "saida"
+  },
+  {
+    "id": 157,
+    "data": "2025-06-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 158,
+    "data": "2025-06-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 159,
+    "data": "2025-06-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 160,
+    "data": "2025-06-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 157,
+    "tipo": "saida"
+  },
+  {
+    "id": 161,
+    "data": "2025-06-05",
+    "descricao": "Salario CLT (junho/2025)",
+    "categoria": "Renda",
+    "valor": 5090,
+    "tipo": "entrada"
+  },
+  {
+    "id": 162,
+    "data": "2025-06-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 380,
+    "tipo": "saida"
+  },
+  {
+    "id": 163,
+    "data": "2025-06-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 164,
+    "data": "2025-06-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 165,
+    "data": "2025-06-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 166,
+    "data": "2025-06-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 167,
+    "data": "2025-06-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 168,
+    "data": "2025-06-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 169,
+    "data": "2025-06-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 109,
+    "tipo": "saida"
+  },
+  {
+    "id": 170,
+    "data": "2025-06-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 171,
+    "data": "2025-06-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 84,
+    "tipo": "saida"
+  },
+  {
+    "id": 172,
+    "data": "2025-06-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 390,
+    "tipo": "saida"
+  },
+  {
+    "id": 173,
+    "data": "2025-06-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 44,
+    "tipo": "saida"
+  },
+  {
+    "id": 174,
+    "data": "2025-06-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 27,
+    "tipo": "saida"
+  },
+  {
+    "id": 175,
+    "data": "2025-06-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 115,
+    "tipo": "saida"
+  },
+  {
+    "id": 176,
+    "data": "2025-06-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 177,
+    "data": "2025-06-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 178,
+    "data": "2025-06-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 179,
+    "data": "2025-06-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 46,
+    "tipo": "saida"
+  },
+  {
+    "id": 180,
+    "data": "2025-06-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 181,
+    "data": "2025-06-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 20,
+    "tipo": "saida"
+  },
+  {
+    "id": 182,
+    "data": "2025-06-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 85,
+    "tipo": "saida"
+  },
+  {
+    "id": 183,
+    "data": "2025-06-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 184,
+    "data": "2025-06-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 185,
+    "data": "2025-06-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 186,
+    "data": "2025-06-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 83,
+    "tipo": "saida"
+  },
+  {
+    "id": 187,
+    "data": "2025-06-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 188,
+    "data": "2025-07-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 189,
+    "data": "2025-07-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 190,
+    "data": "2025-07-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 191,
+    "data": "2025-07-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 169,
+    "tipo": "saida"
+  },
+  {
+    "id": 192,
+    "data": "2025-07-05",
+    "descricao": "Salario CLT (julho/2025)",
+    "categoria": "Renda",
+    "valor": 4850,
+    "tipo": "entrada"
+  },
+  {
+    "id": 193,
+    "data": "2025-07-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 402,
+    "tipo": "saida"
+  },
+  {
+    "id": 194,
+    "data": "2025-07-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 195,
+    "data": "2025-07-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 196,
+    "data": "2025-07-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 197,
+    "data": "2025-07-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 198,
+    "data": "2025-07-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 199,
+    "data": "2025-07-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 200,
+    "data": "2025-07-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 89,
+    "tipo": "saida"
+  },
+  {
+    "id": 201,
+    "data": "2025-07-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 202,
+    "data": "2025-07-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 203,
+    "data": "2025-07-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 430,
+    "tipo": "saida"
+  },
+  {
+    "id": 204,
+    "data": "2025-07-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 48,
+    "tipo": "saida"
+  },
+  {
+    "id": 205,
+    "data": "2025-07-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 21,
+    "tipo": "saida"
+  },
+  {
+    "id": 206,
+    "data": "2025-07-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 207,
+    "data": "2025-07-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 208,
+    "data": "2025-07-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 86,
+    "tipo": "saida"
+  },
+  {
+    "id": 209,
+    "data": "2025-07-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 210,
+    "data": "2025-07-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 211,
+    "data": "2025-07-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 212,
+    "data": "2025-07-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 23,
+    "tipo": "saida"
+  },
+  {
+    "id": 213,
+    "data": "2025-07-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 45,
+    "tipo": "saida"
+  },
+  {
+    "id": 214,
+    "data": "2025-07-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 215,
+    "data": "2025-07-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 216,
+    "data": "2025-07-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 150,
+    "tipo": "saida"
+  },
+  {
+    "id": 217,
+    "data": "2025-07-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 92,
+    "tipo": "saida"
+  },
+  {
+    "id": 218,
+    "data": "2025-07-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 85,
+    "tipo": "saida"
+  },
+  {
+    "id": 219,
+    "data": "2025-07-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 39,
+    "tipo": "saida"
+  },
+  {
+    "id": 220,
+    "data": "2025-08-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 221,
+    "data": "2025-08-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 222,
+    "data": "2025-08-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 223,
+    "data": "2025-08-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 181,
+    "tipo": "saida"
+  },
+  {
+    "id": 224,
+    "data": "2025-08-05",
+    "descricao": "Salario CLT (agosto/2025)",
+    "categoria": "Renda",
+    "valor": 4970,
+    "tipo": "entrada"
+  },
+  {
+    "id": 225,
+    "data": "2025-08-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 424,
+    "tipo": "saida"
+  },
+  {
+    "id": 226,
+    "data": "2025-08-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 227,
+    "data": "2025-08-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 35,
+    "tipo": "saida"
+  },
+  {
+    "id": 228,
+    "data": "2025-08-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 56,
+    "tipo": "saida"
+  },
+  {
+    "id": 229,
+    "data": "2025-08-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 230,
+    "data": "2025-08-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 43,
+    "tipo": "saida"
+  },
+  {
+    "id": 231,
+    "data": "2025-08-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 232,
+    "data": "2025-08-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 99,
+    "tipo": "saida"
+  },
+  {
+    "id": 233,
+    "data": "2025-08-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 234,
+    "data": "2025-08-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 96,
+    "tipo": "saida"
+  },
+  {
+    "id": 235,
+    "data": "2025-08-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 470,
+    "tipo": "saida"
+  },
+  {
+    "id": 236,
+    "data": "2025-08-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 237,
+    "data": "2025-08-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 238,
+    "data": "2025-08-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 155,
+    "tipo": "saida"
+  },
+  {
+    "id": 239,
+    "data": "2025-08-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 240,
+    "data": "2025-08-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 241,
+    "data": "2025-08-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 64,
+    "tipo": "saida"
+  },
+  {
+    "id": 242,
+    "data": "2025-08-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 243,
+    "data": "2025-08-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 244,
+    "data": "2025-08-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 245,
+    "data": "2025-08-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 53,
+    "tipo": "saida"
+  },
+  {
+    "id": 246,
+    "data": "2025-08-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 80,
+    "tipo": "saida"
+  },
+  {
+    "id": 247,
+    "data": "2025-08-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 248,
+    "data": "2025-08-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 180,
+    "tipo": "saida"
+  },
+  {
+    "id": 249,
+    "data": "2025-08-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 101,
+    "tipo": "saida"
+  },
+  {
+    "id": 250,
+    "data": "2025-08-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 110,
+    "tipo": "saida"
+  },
+  {
+    "id": 251,
+    "data": "2025-08-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 50,
+    "tipo": "saida"
+  },
+  {
+    "id": 252,
+    "data": "2025-09-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 253,
+    "data": "2025-09-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 254,
+    "data": "2025-09-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 255,
+    "data": "2025-09-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 145,
+    "tipo": "saida"
+  },
+  {
+    "id": 256,
+    "data": "2025-09-05",
+    "descricao": "Salario CLT (setembro/2025)",
+    "categoria": "Renda",
+    "valor": 5090,
+    "tipo": "entrada"
+  },
+  {
+    "id": 257,
+    "data": "2025-09-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 446,
+    "tipo": "saida"
+  },
+  {
+    "id": 258,
+    "data": "2025-09-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 259,
+    "data": "2025-09-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 260,
+    "data": "2025-09-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 63,
+    "tipo": "saida"
+  },
+  {
+    "id": 261,
+    "data": "2025-09-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 262,
+    "data": "2025-09-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 263,
+    "data": "2025-09-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 264,
+    "data": "2025-09-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 109,
+    "tipo": "saida"
+  },
+  {
+    "id": 265,
+    "data": "2025-09-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 266,
+    "data": "2025-09-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 78,
+    "tipo": "saida"
+  },
+  {
+    "id": 267,
+    "data": "2025-09-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 350,
+    "tipo": "saida"
+  },
+  {
+    "id": 268,
+    "data": "2025-09-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 56,
+    "tipo": "saida"
+  },
+  {
+    "id": 269,
+    "data": "2025-09-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 27,
+    "tipo": "saida"
+  },
+  {
+    "id": 270,
+    "data": "2025-09-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 271,
+    "data": "2025-09-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 272,
+    "data": "2025-09-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 68,
+    "tipo": "saida"
+  },
+  {
+    "id": 273,
+    "data": "2025-09-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 274,
+    "data": "2025-09-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 34,
+    "tipo": "saida"
+  },
+  {
+    "id": 275,
+    "data": "2025-09-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 276,
+    "data": "2025-09-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 17,
+    "tipo": "saida"
+  },
+  {
+    "id": 277,
+    "data": "2025-09-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 61,
+    "tipo": "saida"
+  },
+  {
+    "id": 278,
+    "data": "2025-09-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 279,
+    "data": "2025-09-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 280,
+    "data": "2025-09-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 210,
+    "tipo": "saida"
+  },
+  {
+    "id": 281,
+    "data": "2025-09-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 74,
+    "tipo": "saida"
+  },
+  {
+    "id": 282,
+    "data": "2025-09-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 283,
+    "data": "2025-10-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 284,
+    "data": "2025-10-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 285,
+    "data": "2025-10-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 286,
+    "data": "2025-10-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 157,
+    "tipo": "saida"
+  },
+  {
+    "id": 287,
+    "data": "2025-10-05",
+    "descricao": "Salario CLT (outubro/2025)",
+    "categoria": "Renda",
+    "valor": 4850,
+    "tipo": "entrada"
+  },
+  {
+    "id": 288,
+    "data": "2025-10-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 468,
+    "tipo": "saida"
+  },
+  {
+    "id": 289,
+    "data": "2025-10-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 290,
+    "data": "2025-10-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 291,
+    "data": "2025-10-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 292,
+    "data": "2025-10-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 293,
+    "data": "2025-10-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 294,
+    "data": "2025-10-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 295,
+    "data": "2025-10-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 89,
+    "tipo": "saida"
+  },
+  {
+    "id": 296,
+    "data": "2025-10-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 297,
+    "data": "2025-10-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 84,
+    "tipo": "saida"
+  },
+  {
+    "id": 298,
+    "data": "2025-10-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 390,
+    "tipo": "saida"
+  },
+  {
+    "id": 299,
+    "data": "2025-10-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 300,
+    "data": "2025-10-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 21,
+    "tipo": "saida"
+  },
+  {
+    "id": 301,
+    "data": "2025-10-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 115,
+    "tipo": "saida"
+  },
+  {
+    "id": 302,
+    "data": "2025-10-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 303,
+    "data": "2025-10-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 304,
+    "data": "2025-10-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 76,
+    "tipo": "saida"
+  },
+  {
+    "id": 305,
+    "data": "2025-10-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 46,
+    "tipo": "saida"
+  },
+  {
+    "id": 306,
+    "data": "2025-10-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 307,
+    "data": "2025-10-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 20,
+    "tipo": "saida"
+  },
+  {
+    "id": 308,
+    "data": "2025-10-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 69,
+    "tipo": "saida"
+  },
+  {
+    "id": 309,
+    "data": "2025-10-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 310,
+    "data": "2025-10-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 311,
+    "data": "2025-10-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 240,
+    "tipo": "saida"
+  },
+  {
+    "id": 312,
+    "data": "2025-10-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 83,
+    "tipo": "saida"
+  },
+  {
+    "id": 313,
+    "data": "2025-10-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 160,
+    "tipo": "saida"
+  },
+  {
+    "id": 314,
+    "data": "2025-10-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 39,
+    "tipo": "saida"
+  },
+  {
+    "id": 315,
+    "data": "2025-11-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 316,
+    "data": "2025-11-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 317,
+    "data": "2025-11-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 318,
+    "data": "2025-11-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 169,
+    "tipo": "saida"
+  },
+  {
+    "id": 319,
+    "data": "2025-11-05",
+    "descricao": "Salario CLT (novembro/2025)",
+    "categoria": "Renda",
+    "valor": 4970,
+    "tipo": "entrada"
+  },
+  {
+    "id": 320,
+    "data": "2025-11-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 380,
+    "tipo": "saida"
+  },
+  {
+    "id": 321,
+    "data": "2025-11-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 322,
+    "data": "2025-11-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 323,
+    "data": "2025-11-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 324,
+    "data": "2025-11-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 325,
+    "data": "2025-11-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 43,
+    "tipo": "saida"
+  },
+  {
+    "id": 326,
+    "data": "2025-11-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 327,
+    "data": "2025-11-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 99,
+    "tipo": "saida"
+  },
+  {
+    "id": 328,
+    "data": "2025-11-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 329,
+    "data": "2025-11-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 330,
+    "data": "2025-11-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 430,
+    "tipo": "saida"
+  },
+  {
+    "id": 331,
+    "data": "2025-11-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 44,
+    "tipo": "saida"
+  },
+  {
+    "id": 332,
+    "data": "2025-11-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 333,
+    "data": "2025-11-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 334,
+    "data": "2025-11-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 335,
+    "data": "2025-11-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 86,
+    "tipo": "saida"
+  },
+  {
+    "id": 336,
+    "data": "2025-11-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 337,
+    "data": "2025-11-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 338,
+    "data": "2025-11-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 339,
+    "data": "2025-11-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 23,
+    "tipo": "saida"
+  },
+  {
+    "id": 340,
+    "data": "2025-11-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 341,
+    "data": "2025-11-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 80,
+    "tipo": "saida"
+  },
+  {
+    "id": 342,
+    "data": "2025-11-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 343,
+    "data": "2025-11-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 344,
+    "data": "2025-11-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 92,
+    "tipo": "saida"
+  },
+  {
+    "id": 345,
+    "data": "2025-11-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 346,
+    "data": "2025-12-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1650,
+    "tipo": "saida"
+  },
+  {
+    "id": 347,
+    "data": "2025-12-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 348,
+    "data": "2025-12-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 349,
+    "data": "2025-12-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 181,
+    "tipo": "saida"
+  },
+  {
+    "id": 350,
+    "data": "2025-12-05",
+    "descricao": "Salario CLT (dezembro/2025)",
+    "categoria": "Renda",
+    "valor": 5090,
+    "tipo": "entrada"
+  },
+  {
+    "id": 351,
+    "data": "2025-12-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 402,
+    "tipo": "saida"
+  },
+  {
+    "id": 352,
+    "data": "2025-12-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 353,
+    "data": "2025-12-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 35,
+    "tipo": "saida"
+  },
+  {
+    "id": 354,
+    "data": "2025-12-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 355,
+    "data": "2025-12-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 356,
+    "data": "2025-12-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 357,
+    "data": "2025-12-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 358,
+    "data": "2025-12-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 109,
+    "tipo": "saida"
+  },
+  {
+    "id": 359,
+    "data": "2025-12-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 360,
+    "data": "2025-12-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 96,
+    "tipo": "saida"
+  },
+  {
+    "id": 361,
+    "data": "2025-12-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 470,
+    "tipo": "saida"
+  },
+  {
+    "id": 362,
+    "data": "2025-12-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 48,
+    "tipo": "saida"
+  },
+  {
+    "id": 363,
+    "data": "2025-12-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 27,
+    "tipo": "saida"
+  },
+  {
+    "id": 364,
+    "data": "2025-12-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 155,
+    "tipo": "saida"
+  },
+  {
+    "id": 365,
+    "data": "2025-12-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 366,
+    "data": "2025-12-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 367,
+    "data": "2025-12-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 368,
+    "data": "2025-12-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 369,
+    "data": "2025-12-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 370,
+    "data": "2025-12-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 371,
+    "data": "2025-12-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 85,
+    "tipo": "saida"
+  },
+  {
+    "id": 372,
+    "data": "2025-12-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 373,
+    "data": "2025-12-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 374,
+    "data": "2025-12-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 150,
+    "tipo": "saida"
+  },
+  {
+    "id": 375,
+    "data": "2025-12-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 101,
+    "tipo": "saida"
+  },
+  {
+    "id": 376,
+    "data": "2025-12-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 85,
+    "tipo": "saida"
+  },
+  {
+    "id": 377,
+    "data": "2025-12-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 61,
+    "tipo": "saida"
+  },
+  {
+    "id": 378,
+    "data": "2026-01-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1730,
+    "tipo": "saida"
+  },
+  {
+    "id": 379,
+    "data": "2026-01-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 380,
+    "data": "2026-01-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 381,
+    "data": "2026-01-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 145,
+    "tipo": "saida"
+  },
+  {
+    "id": 382,
+    "data": "2026-01-05",
+    "descricao": "Salario CLT (janeiro/2026)",
+    "categoria": "Renda",
+    "valor": 5030,
+    "tipo": "entrada"
+  },
+  {
+    "id": 383,
+    "data": "2026-01-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 380,
+    "tipo": "saida"
+  },
+  {
+    "id": 384,
+    "data": "2026-01-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 385,
+    "data": "2026-01-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 386,
+    "data": "2026-01-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 387,
+    "data": "2026-01-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 388,
+    "data": "2026-01-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 389,
+    "data": "2026-01-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 390,
+    "data": "2026-01-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 89,
+    "tipo": "saida"
+  },
+  {
+    "id": 391,
+    "data": "2026-01-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 392,
+    "data": "2026-01-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 78,
+    "tipo": "saida"
+  },
+  {
+    "id": 393,
+    "data": "2026-01-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 350,
+    "tipo": "saida"
+  },
+  {
+    "id": 394,
+    "data": "2026-01-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 44,
+    "tipo": "saida"
+  },
+  {
+    "id": 395,
+    "data": "2026-01-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 21,
+    "tipo": "saida"
+  },
+  {
+    "id": 396,
+    "data": "2026-01-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 397,
+    "data": "2026-01-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 398,
+    "data": "2026-01-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 68,
+    "tipo": "saida"
+  },
+  {
+    "id": 399,
+    "data": "2026-01-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 400,
+    "data": "2026-01-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 34,
+    "tipo": "saida"
+  },
+  {
+    "id": 401,
+    "data": "2026-01-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 402,
+    "data": "2026-01-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 17,
+    "tipo": "saida"
+  },
+  {
+    "id": 403,
+    "data": "2026-01-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 45,
+    "tipo": "saida"
+  },
+  {
+    "id": 404,
+    "data": "2026-01-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 405,
+    "data": "2026-01-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 406,
+    "data": "2026-01-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 407,
+    "data": "2026-01-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 74,
+    "tipo": "saida"
+  },
+  {
+    "id": 408,
+    "data": "2026-01-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 409,
+    "data": "2026-01-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 39,
+    "tipo": "saida"
+  },
+  {
+    "id": 410,
+    "data": "2026-02-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1730,
+    "tipo": "saida"
+  },
+  {
+    "id": 411,
+    "data": "2026-02-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 412,
+    "data": "2026-02-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 413,
+    "data": "2026-02-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 157,
+    "tipo": "saida"
+  },
+  {
+    "id": 414,
+    "data": "2026-02-05",
+    "descricao": "Salario CLT (fevereiro/2026)",
+    "categoria": "Renda",
+    "valor": 5150,
+    "tipo": "entrada"
+  },
+  {
+    "id": 415,
+    "data": "2026-02-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 402,
+    "tipo": "saida"
+  },
+  {
+    "id": 416,
+    "data": "2026-02-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 417,
+    "data": "2026-02-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 418,
+    "data": "2026-02-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 419,
+    "data": "2026-02-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 420,
+    "data": "2026-02-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 43,
+    "tipo": "saida"
+  },
+  {
+    "id": 421,
+    "data": "2026-02-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 422,
+    "data": "2026-02-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 99,
+    "tipo": "saida"
+  },
+  {
+    "id": 423,
+    "data": "2026-02-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 424,
+    "data": "2026-02-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 84,
+    "tipo": "saida"
+  },
+  {
+    "id": 425,
+    "data": "2026-02-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 390,
+    "tipo": "saida"
+  },
+  {
+    "id": 426,
+    "data": "2026-02-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 48,
+    "tipo": "saida"
+  },
+  {
+    "id": 427,
+    "data": "2026-02-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 428,
+    "data": "2026-02-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 115,
+    "tipo": "saida"
+  },
+  {
+    "id": 429,
+    "data": "2026-02-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 430,
+    "data": "2026-02-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 431,
+    "data": "2026-02-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 432,
+    "data": "2026-02-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 46,
+    "tipo": "saida"
+  },
+  {
+    "id": 433,
+    "data": "2026-02-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 434,
+    "data": "2026-02-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 20,
+    "tipo": "saida"
+  },
+  {
+    "id": 435,
+    "data": "2026-02-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 53,
+    "tipo": "saida"
+  },
+  {
+    "id": 436,
+    "data": "2026-02-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 80,
+    "tipo": "saida"
+  },
+  {
+    "id": 437,
+    "data": "2026-02-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 438,
+    "data": "2026-02-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 150,
+    "tipo": "saida"
+  },
+  {
+    "id": 439,
+    "data": "2026-03-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1730,
+    "tipo": "saida"
+  },
+  {
+    "id": 440,
+    "data": "2026-03-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 441,
+    "data": "2026-03-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 442,
+    "data": "2026-03-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 169,
+    "tipo": "saida"
+  },
+  {
+    "id": 443,
+    "data": "2026-03-05",
+    "descricao": "Salario CLT (marco/2026)",
+    "categoria": "Renda",
+    "valor": 5270,
+    "tipo": "entrada"
+  },
+  {
+    "id": 444,
+    "data": "2026-03-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 424,
+    "tipo": "saida"
+  },
+  {
+    "id": 445,
+    "data": "2026-03-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 446,
+    "data": "2026-03-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 447,
+    "data": "2026-03-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 56,
+    "tipo": "saida"
+  },
+  {
+    "id": 448,
+    "data": "2026-03-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 449,
+    "data": "2026-03-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 49,
+    "tipo": "saida"
+  },
+  {
+    "id": 450,
+    "data": "2026-03-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 451,
+    "data": "2026-03-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 109,
+    "tipo": "saida"
+  },
+  {
+    "id": 452,
+    "data": "2026-03-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 42,
+    "tipo": "saida"
+  },
+  {
+    "id": 453,
+    "data": "2026-03-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 454,
+    "data": "2026-03-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 430,
+    "tipo": "saida"
+  },
+  {
+    "id": 455,
+    "data": "2026-03-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 52,
+    "tipo": "saida"
+  },
+  {
+    "id": 456,
+    "data": "2026-03-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 27,
+    "tipo": "saida"
+  },
+  {
+    "id": 457,
+    "data": "2026-03-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 458,
+    "data": "2026-03-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 459,
+    "data": "2026-03-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 86,
+    "tipo": "saida"
+  },
+  {
+    "id": 460,
+    "data": "2026-03-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 64,
+    "tipo": "saida"
+  },
+  {
+    "id": 461,
+    "data": "2026-03-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 58,
+    "tipo": "saida"
+  },
+  {
+    "id": 462,
+    "data": "2026-03-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 463,
+    "data": "2026-03-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 23,
+    "tipo": "saida"
+  },
+  {
+    "id": 464,
+    "data": "2026-03-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 61,
+    "tipo": "saida"
+  },
+  {
+    "id": 465,
+    "data": "2026-03-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 466,
+    "data": "2026-03-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 467,
+    "data": "2026-03-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 180,
+    "tipo": "saida"
+  },
+  {
+    "id": 468,
+    "data": "2026-03-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 92,
+    "tipo": "saida"
+  },
+  {
+    "id": 469,
+    "data": "2026-03-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 110,
+    "tipo": "saida"
+  },
+  {
+    "id": 470,
+    "data": "2026-03-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 61,
+    "tipo": "saida"
+  },
+  {
+    "id": 471,
+    "data": "2026-04-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1730,
+    "tipo": "saida"
+  },
+  {
+    "id": 472,
+    "data": "2026-04-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 435,
+    "tipo": "saida"
+  },
+  {
+    "id": 473,
+    "data": "2026-04-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 474,
+    "data": "2026-04-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 181,
+    "tipo": "saida"
+  },
+  {
+    "id": 475,
+    "data": "2026-04-05",
+    "descricao": "Salario CLT (abril/2026)",
+    "categoria": "Renda",
+    "valor": 5030,
+    "tipo": "entrada"
+  },
+  {
+    "id": 476,
+    "data": "2026-04-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 446,
+    "tipo": "saida"
+  },
+  {
+    "id": 477,
+    "data": "2026-04-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 478,
+    "data": "2026-04-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 35,
+    "tipo": "saida"
+  },
+  {
+    "id": 479,
+    "data": "2026-04-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 63,
+    "tipo": "saida"
+  },
+  {
+    "id": 480,
+    "data": "2026-04-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 481,
+    "data": "2026-04-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 482,
+    "data": "2026-04-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 483,
+    "data": "2026-04-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 89,
+    "tipo": "saida"
+  },
+  {
+    "id": 484,
+    "data": "2026-04-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 32,
+    "tipo": "saida"
+  },
+  {
+    "id": 485,
+    "data": "2026-04-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 96,
+    "tipo": "saida"
+  },
+  {
+    "id": 486,
+    "data": "2026-04-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 470,
+    "tipo": "saida"
+  },
+  {
+    "id": 487,
+    "data": "2026-04-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 56,
+    "tipo": "saida"
+  },
+  {
+    "id": 488,
+    "data": "2026-04-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 21,
+    "tipo": "saida"
+  },
+  {
+    "id": 489,
+    "data": "2026-04-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 155,
+    "tipo": "saida"
+  },
+  {
+    "id": 490,
+    "data": "2026-04-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 36,
+    "tipo": "saida"
+  },
+  {
+    "id": 491,
+    "data": "2026-04-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 492,
+    "data": "2026-04-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 493,
+    "data": "2026-04-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 494,
+    "data": "2026-04-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 495,
+    "data": "2026-04-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 496,
+    "data": "2026-04-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 69,
+    "tipo": "saida"
+  },
+  {
+    "id": 497,
+    "data": "2026-04-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 498,
+    "data": "2026-04-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 499,
+    "data": "2026-04-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 210,
+    "tipo": "saida"
+  },
+  {
+    "id": 500,
+    "data": "2026-04-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 101,
+    "tipo": "saida"
+  },
+  {
+    "id": 501,
+    "data": "2026-04-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 135,
+    "tipo": "saida"
+  },
+  {
+    "id": 502,
+    "data": "2026-05-01",
+    "descricao": "Aluguel do apartamento",
+    "categoria": "Moradia",
+    "valor": 1730,
+    "tipo": "saida"
+  },
+  {
+    "id": 503,
+    "data": "2026-05-02",
+    "descricao": "Condominio",
+    "categoria": "Moradia",
+    "valor": 420,
+    "tipo": "saida"
+  },
+  {
+    "id": 504,
+    "data": "2026-05-03",
+    "descricao": "Internet fibra residencial",
+    "categoria": "Moradia",
+    "valor": 120,
+    "tipo": "saida"
+  },
+  {
+    "id": 505,
+    "data": "2026-05-04",
+    "descricao": "Conta de energia",
+    "categoria": "Moradia",
+    "valor": 145,
+    "tipo": "saida"
+  },
+  {
+    "id": 506,
+    "data": "2026-05-05",
+    "descricao": "Salario CLT (maio/2026)",
+    "categoria": "Renda",
+    "valor": 5150,
+    "tipo": "entrada"
+  },
+  {
+    "id": 507,
+    "data": "2026-05-05",
+    "descricao": "Compra do mes no mercado",
+    "categoria": "Alimentação",
+    "valor": 468,
+    "tipo": "saida"
+  },
+  {
+    "id": 508,
+    "data": "2026-05-06",
+    "descricao": "Almoco durante expediente",
+    "categoria": "Alimentação",
+    "valor": 29,
+    "tipo": "saida"
+  },
+  {
+    "id": 509,
+    "data": "2026-05-07",
+    "descricao": "Transporte por aplicativo",
+    "categoria": "Transporte",
+    "valor": 26,
+    "tipo": "saida"
+  },
+  {
+    "id": 510,
+    "data": "2026-05-08",
+    "descricao": "Farmacia e cuidados pessoais",
+    "categoria": "Saúde",
+    "valor": 70,
+    "tipo": "saida"
+  },
+  {
+    "id": 511,
+    "data": "2026-05-09",
+    "descricao": "Assinaturas de streaming",
+    "categoria": "Lazer",
+    "valor": 54.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 512,
+    "data": "2026-05-10",
+    "descricao": "Almoco com colegas",
+    "categoria": "Alimentação",
+    "valor": 43,
+    "tipo": "saida"
+  },
+  {
+    "id": 513,
+    "data": "2026-05-11",
+    "descricao": "Recarga de transporte publico",
+    "categoria": "Transporte",
+    "valor": 90,
+    "tipo": "saida"
+  },
+  {
+    "id": 514,
+    "data": "2026-05-12",
+    "descricao": "Curso online parcelado",
+    "categoria": "Educação",
+    "valor": 99,
+    "tipo": "saida"
+  },
+  {
+    "id": 515,
+    "data": "2026-05-13",
+    "descricao": "Cinema ou passeio cultural",
+    "categoria": "Lazer",
+    "valor": 37,
+    "tipo": "saida"
+  },
+  {
+    "id": 516,
+    "data": "2026-05-14",
+    "descricao": "Conta de agua",
+    "categoria": "Moradia",
+    "valor": 78,
+    "tipo": "saida"
+  },
+  {
+    "id": 517,
+    "data": "2026-05-15",
+    "descricao": "Transferencia para reserva",
+    "categoria": "Poupança",
+    "valor": 350,
+    "tipo": "saida"
+  },
+  {
+    "id": 518,
+    "data": "2026-05-16",
+    "descricao": "Restaurante no fim do dia",
+    "categoria": "Alimentação",
+    "valor": 60,
+    "tipo": "saida"
+  },
+  {
+    "id": 519,
+    "data": "2026-05-17",
+    "descricao": "Padaria e itens rapidos",
+    "categoria": "Alimentação",
+    "valor": 24,
+    "tipo": "saida"
+  },
+  {
+    "id": 520,
+    "data": "2026-05-18",
+    "descricao": "Consulta ou exame eventual",
+    "categoria": "Saúde",
+    "valor": 95,
+    "tipo": "saida"
+  },
+  {
+    "id": 521,
+    "data": "2026-05-19",
+    "descricao": "Uber para compromisso pessoal",
+    "categoria": "Transporte",
+    "valor": 40,
+    "tipo": "saida"
+  },
+  {
+    "id": 522,
+    "data": "2026-05-20",
+    "descricao": "Jantar de fim de semana",
+    "categoria": "Lazer",
+    "valor": 68,
+    "tipo": "saida"
+  },
+  {
+    "id": 523,
+    "data": "2026-05-21",
+    "descricao": "Feira da semana",
+    "categoria": "Alimentação",
+    "valor": 76,
+    "tipo": "saida"
+  },
+  {
+    "id": 524,
+    "data": "2026-05-22",
+    "descricao": "Compra de material de estudo",
+    "categoria": "Educação",
+    "valor": 34,
+    "tipo": "saida"
+  },
+  {
+    "id": 525,
+    "data": "2026-05-23",
+    "descricao": "Conta de celular",
+    "categoria": "Outros",
+    "valor": 64.9,
+    "tipo": "saida"
+  },
+  {
+    "id": 526,
+    "data": "2026-05-24",
+    "descricao": "Cafe e snack no trabalho",
+    "categoria": "Alimentação",
+    "valor": 17,
+    "tipo": "saida"
+  },
+  {
+    "id": 527,
+    "data": "2026-05-25",
+    "descricao": "Presente ou evento social",
+    "categoria": "Lazer",
+    "valor": 77,
+    "tipo": "saida"
+  },
+  {
+    "id": 528,
+    "data": "2026-05-26",
+    "descricao": "Combustivel eventual",
+    "categoria": "Transporte",
+    "valor": 80,
+    "tipo": "saida"
+  },
+  {
+    "id": 529,
+    "data": "2026-05-27",
+    "descricao": "Itens de higiene e autocuidado",
+    "categoria": "Saúde",
+    "valor": 28,
+    "tipo": "saida"
+  },
+  {
+    "id": 530,
+    "data": "2026-05-28",
+    "descricao": "Aporte extra para reserva",
+    "categoria": "Poupança",
+    "valor": 240,
+    "tipo": "saida"
+  },
+  {
+    "id": 531,
+    "data": "2026-05-29",
+    "descricao": "Mercado complementar",
+    "categoria": "Alimentação",
+    "valor": 74,
+    "tipo": "saida"
+  },
+  {
+    "id": 532,
+    "data": "2026-05-30",
+    "descricao": "Compra variada do mes",
+    "categoria": "Outros",
+    "valor": 160,
+    "tipo": "saida"
+  },
+  {
+    "id": 533,
+    "data": "2026-05-31",
+    "descricao": "Ajuste de fechamento do mes",
+    "categoria": "Outros",
+    "valor": 50,
+    "tipo": "saida"
+  }
+]
