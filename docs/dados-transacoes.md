@@ -1,18 +1,24 @@
-# Dados de Transacoes
+# Dados Mockados
 
-Este projeto usa um arquivo JSON com transacoes financeiras simuladas para alimentar o front-end da aplicacao de analise de risco financeiro.
+Este projeto usa arquivos JSON com dados financeiros simulados para alimentar o front-end da aplicacao de analise de risco financeiro.
 
-## O que esses dados representam
+## Arquivos disponiveis
 
-O arquivo [database/transactions.json](../database/transactions.json) contem um array de objetos com este formato:
+- [database/transactions.json](../database/transactions.json): historico de transacoes financeiras.
+- [database/score-history.json](../database/score-history.json): historico mensal de score.
+- [database/goals.json](../database/goals.json): metas financeiras.
+
+## O que representam as transacoes
+
+O arquivo `transactions.json` contem um array de objetos neste formato:
 
 ```json
 {
   "id": 1,
-  "data": "2024-08-02",
-  "descricao": "Salario (agosto)",
+  "data": "2025-01-05",
+  "descricao": "Salario CLT (janeiro/2025)",
   "categoria": "Renda",
-  "valor": 4280.0,
+  "valor": 4850,
   "tipo": "entrada"
 }
 ```
@@ -21,7 +27,27 @@ Cada registro representa uma movimentacao financeira de uma pessoa fisica. O con
 
 - salario mensal como unica fonte de entrada;
 - despesas recorrentes e variaveis;
-- categorias como Moradia, Alimentacao, Transporte, Saude, Lazer, Dividas e Financeiro;
-- pelo menos uma transacao por dia no periodo de janeiro de 2025 ate maio de 2026.
+- pelo menos uma transacao por dia no periodo de janeiro de 2025 ate maio de 2026;
+- categorias padronizadas para facilitar filtros e dashboards.
 
-Esse perfil ajuda a testar visualizacoes, filtros, indicadores de saldo, comprometimento de renda e comportamento financeiro ao longo do tempo.
+As categorias usadas no mock seguem exatamente este padrao:
+
+- `Renda`
+- `Moradia`
+- `Alimentação`
+- `Lazer`
+- `Saúde`
+- `Transporte`
+- `Educação`
+- `Poupança`
+- `Outros`
+
+Esse perfil ajuda a testar visualizacoes, filtros por periodo, saldo mensal, distribuicao por categoria, comprometimento de renda e sinais de risco financeiro.
+
+## O que representa o historico de score
+
+O arquivo `score-history.json` traz um registro por mes para toda a mesma faixa coberta pelo mock de transacoes, de janeiro de 2025 ate maio de 2026.
+
+## O que representam as metas
+
+O arquivo `goals.json` contem metas financeiras associadas a categorias como `Poupança`, `Lazer` e `Educação`.

@@ -1,0 +1,44 @@
+{
+  "metas": [
+    {
+      "id": "meta_reserva",
+      "descricao": "Reserva de emergencia (12 meses de moradia)",
+      "valorAlvo": 21600,
+      "valorAtual": 7340,
+      "prazo": "2026-08-01",
+      "categoria": "Poupança"
+    },
+    {
+      "id": "meta_lazer_grande",
+      "descricao": "Viagem com amigos sem financiar no cartao",
+      "valorAlvo": 8400,
+      "valorAtual": 980,
+      "prazo": "2025-11-01",
+      "categoria": "Lazer"
+    },
+    {
+      "id": "meta_skill",
+      "descricao": "Certificacao internacional UX Research",
+      "valorAlvo": 5200,
+      "valorAtual": 920,
+      "prazo": "2025-10-01",
+      "categoria": "Educação"
+    },
+    {
+      "id": "meta_reforma_home_office",
+      "descricao": "Montar home office ergonomico",
+      "valorAlvo": 3600,
+      "valorAtual": 1240,
+      "prazo": "2026-02-01",
+      "categoria": "Outros"
+    },
+    {
+      "id": "meta_formacao_continua",
+      "descricao": "Assinatura anual de plataforma de cursos",
+      "valorAlvo": 1800,
+      "valorAtual": 460,
+      "prazo": "2025-12-01",
+      "categoria": "Educação"
+    }
+  ]
+}
