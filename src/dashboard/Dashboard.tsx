@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import FinancialProfileContext from "@/context/FinancialProfileContext";
+import SpendingDistributionCard from "./SpendingDistributionCard";
+import FinancialScoreCard from "./FinancialScoreCard";
 
 export default function Dashboard() {
       const { financialProfile } = useContext(FinancialProfileContext);
@@ -12,9 +14,10 @@ export default function Dashboard() {
       <p>{JSON.stringify(financialProfile)}</p>
 
       {/* AREA DE CARDS */}
-      <div className="w-30 h-30 bg-red-300">card</div>
-      <div className="w-30 h-30 bg-red-300">card</div>
-      <div className="w-30 h-30 bg-red-300">card</div>
+      <div className="flex gap-10">
+        <SpendingDistributionCard />
+        <FinancialScoreCard />
+      </div>
     </div>
   );
 }
