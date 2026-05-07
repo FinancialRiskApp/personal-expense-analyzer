@@ -5,12 +5,12 @@ import {
   SidebarGroup,
   SidebarHeader,
 } from "@/components/ui/sidebar";
-import UserAvatar from "./UserAvatar";
-import { FinancialProfileForm } from "./FinancialProfileForm";
+import UserAvatar from "../financialProfile/UserAvatar";
+import { FinancialProfileForm } from "../financialProfile/FinancialProfileForm";
 
 export function AppSidebar() {
   return (
-    <Sidebar className="p-2">
+    <Sidebar>
       <SidebarHeader>
         <h1 className="font-extrabold">Dashboard Risco Financeiro</h1>
       </SidebarHeader>
