@@ -7,7 +7,7 @@ interface CartProviderProp {
 }
 function FinancialProfileProvider({ children }: CartProviderProp) {
   const [financialProfile, setFinancialProfile] = useState<FormData>({
-    income: "0",
+    income: 0,
     riskProfile: "option-1",
   });
 

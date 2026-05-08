@@ -10,9 +10,9 @@ const transactions = getTransactions();
 export default function FinancialProjectionCard() {
   const { financialProfile } = useContext(FinancialProfileContext);
   
-  const [currentIncome, setCurretIncome] = useState("0");
+  const [currentIncome, setCurretIncome] = useState(0);
   
-  const monthlyProjection = monthlyBalanceProjection(Number(currentIncome), new Date().toISOString(), transactions);
+  const monthlyProjection = monthlyBalanceProjection(currentIncome, new Date().toISOString(), transactions);
 
   function formatValue(value: number) {
     return new Intl.NumberFormat("pt-BR", {
@@ -22,12 +22,8 @@ export default function FinancialProjectionCard() {
   }
 
   useEffect(() => {
-    const currentMonthIncome =
-      financialProfile.income === "0"
-        ? getCurrentMonthSalary(transactions)
-        : financialProfile.income;
-
-    setCurretIncome(currentMonthIncome.toString());
+    const currentMonthIncome = financialProfile.income === 0 ? getCurrentMonthSalary(transactions) : financialProfile.income;
+    setCurretIncome(currentMonthIncome);
   }, [financialProfile]);
 
   return (

@@ -31,7 +31,6 @@ export function FinancialProfileForm() {
     resolver: zodResolver(FormSchema),
     mode: "onChange",
     defaultValues: {
-      income: "",
       riskProfile: "option-1",
     },
   });
@@ -41,7 +40,6 @@ export function FinancialProfileForm() {
   const { setFinancialProfile } = useContext(FinancialProfileContext);
 
   function onSubmit(data: FormData) {
-    console.log(data);
     setFinancialProfile(data);
     reset();
     toggleSidebar();
@@ -65,7 +63,10 @@ export function FinancialProfileForm() {
                   step={0.01}
                   placeholder="R$ 0,00"
                   required
-                  {...register("income")}
+                  {...(register("income"),
+                  {
+                    valueAsNumber: true,
+                  })}
                 />
                 {errors.income && <p className="text-red-500 text-sm">{errors.income.message}</p>}
               </Field>
