@@ -1,5 +1,6 @@
-import { detectUnusualExpenses, type Transaction } from "./detectUnusualExpenses";
+import { detectUnusualExpenses } from "./detectUnusualExpenses";
 import { generateRiskAlerts, type RiskAlert } from "./generateRiskAlerts";
+import type { Transaction } from "./types/transactions";
 
 export type FinancialScore = {
   score: number;

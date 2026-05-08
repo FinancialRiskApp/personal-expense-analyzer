@@ -1,8 +1,5 @@
-import {
-  detectUnusualExpenses,
-  type Transaction,
-  type UnusualExpense,
-} from "./detectUnusualExpenses";
+import { detectUnusualExpenses, type UnusualExpense } from "./detectUnusualExpenses";
+import type { Transaction } from "./types/transactions";
 
 export type RiskLevel = "baixo" | "médio" | "alto";
 

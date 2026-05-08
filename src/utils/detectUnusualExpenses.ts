@@ -1,11 +1,4 @@
-export type Transaction = {
-  id: number;
-  data: string;
-  descricao: string;
-  categoria: string;
-  valor: number;
-  tipo: "entrada" | "saida";
-};
+import type { Transaction } from "./types/transactions";
 
 export type UnusualExpense = {
   id: number;
