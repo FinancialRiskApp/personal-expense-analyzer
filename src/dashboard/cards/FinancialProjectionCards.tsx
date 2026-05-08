@@ -3,19 +3,22 @@ import FinancialProfileContext from "@/context/FinancialProfileContext";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingDown, TrendingUp, Wallet } from "lucide-react";
 import { getCurrentMonthSalary, getTransactions } from "@/services/transactions.service";
+import { monthlyBalanceProjection } from "@/utils/balanceProjetion";
+
+const transactions = getTransactions();
 
 export default function FinancialProjectionCard() {
   const { financialProfile } = useContext(FinancialProfileContext);
   
-  const transactions = getTransactions();
-
   const [currentIncome, setCurretIncome] = useState("0");
+  
+  const monthlyProjection = monthlyBalanceProjection(Number(currentIncome), new Date().toISOString(), transactions);
 
-  function formatValue(value: string | number) {
+  function formatValue(value: number) {
     return new Intl.NumberFormat("pt-BR", {
       style: "currency",
       currency: "BRL",
-    }).format(Number(value));
+    }).format(value);
   }
 
   useEffect(() => {
@@ -23,8 +26,8 @@ export default function FinancialProjectionCard() {
       financialProfile.income === "0"
         ? getCurrentMonthSalary(transactions)
         : financialProfile.income;
-    const currentMonthIncomeFormatted = formatValue(currentMonthIncome);
-    setCurretIncome(currentMonthIncomeFormatted);
+
+    setCurretIncome(currentMonthIncome.toString());
   }, [financialProfile]);
 
   return (
@@ -37,23 +40,22 @@ export default function FinancialProjectionCard() {
           <div className="flex flex-col items-center text-sm">
             <Wallet />
             <span>Renda do Mês</span>
-            <span>{currentIncome}</span>
+            <span>{formatValue(Number(currentIncome))}</span>
           </div>
           <div className="flex flex-col items-center text-sm">
             <TrendingDown />
             <span>Gastos Atuais</span>
-            <span>R$ 6500,00</span>
+            <span>{formatValue(monthlyProjection.totalExpensesInPeriod)}</span>
           </div>
           <div className="flex flex-col items-center text-sm">
             <TrendingUp />
             <span>Saldo Atual</span>
-            <span>R$ 2000,00</span>
+            <span>{formatValue(monthlyProjection.currentBalance)}</span>
           </div>
         </div>
         <div className="flex flex-col gap-4 p-2 border-2 border-zinc-300 rounded-sm">
           <h2>Saldo Projetado fim do mês</h2>
-          <p>valor</p>
-          <span>Mensagem</span>
+          <p>{formatValue(monthlyProjection.projectedBalance)}</p>
         </div>
       </CardContent>
     </Card>

@@ -48,7 +48,7 @@ function dailyAverage(date: string, filteredTransactions: Transaction[]) {
 }
 
 export function monthlyBalanceProjection(
-  income: string,
+  income: number,
   currentDate: string,
   transactions: Transaction[],
 ) : MonthlyBalanceProjection {
@@ -58,9 +58,9 @@ export function monthlyBalanceProjection(
   const totalExpensesInPeriod = sumValues(filteredExpenses);
   const averageDailyExpenses = dailyAverage(currentDate, filteredExpenses);
   const projectedTotalExpenses = averageDailyExpenses * daysInMonth;
-  const projectedBalance = Number(income) - projectedTotalExpenses;
+  const projectedBalance = income - projectedTotalExpenses;
   const requiredBalance = projectedBalance < 0 ? Math.abs(projectedBalance) : 0;
-  const currentBalance = Number(income) - totalExpensesInPeriod;
+  const currentBalance = income - totalExpensesInPeriod;
 
   return {
     referenceDate: currentDate,
