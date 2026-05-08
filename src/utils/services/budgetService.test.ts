@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { getRemainingDailyBudget, getDailyBudgetStatus } from "./index";
+import { getRemainingDailyBudget, getDailyBudgetStatus } from "./budgetService";
 
 const { mockListIncome, mockListExpense } = vi.hoisted(() => ({
   mockListIncome: vi.fn(),
