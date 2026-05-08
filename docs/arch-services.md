@@ -20,7 +20,7 @@
 - A maioria das funções recebe uma `string` ISO (`"YYYY-MM-DD"`) e extrai mês/ano internamente.
 - `getRemainingDailyBudget()` é a exceção: usa `dayjs()` (data atual) e não recebe parâmetros.
 
-## 3. As 4 funções disponíveis
+## 3. As 5 funções disponíveis
 
 ```ts
 import {
@@ -28,6 +28,7 @@ import {
   getMonthlyExpenses,
   getMonthBalance,
   getRemainingDailyBudget,
+  getDailyBudgetStatus,
 } from "@/utils/services";
 ```
 
@@ -37,6 +38,7 @@ import {
 | `getMonthlyExpenses("2026-05-08")` | Soma das saídas de Maio/2026 | `number` |
 | `getMonthBalance("2026-05-08")` | Entradas - Saídas de Maio/2026 | `number` |
 | `getRemainingDailyBudget()` | Quanto gastar por dia para ficar no orçamento | `number` |
+| `getDailyBudgetStatus()` | Status do orçamento diário | `"positivo" \| "equilibrado" \| "negativo"` |
 
 ## 4. Exemplo isolado
 
@@ -46,6 +48,7 @@ import {
   getMonthlyExpenses,
   getMonthBalance,
   getRemainingDailyBudget,
+  getDailyBudgetStatus,
 } from "@/utils/services";
 
 const income = getMonthlyIncome("2026-05-08");      // 4850
@@ -53,6 +56,7 @@ const expenses = getMonthlyExpenses("2026-05-08");  // 3200
 const balance = getMonthBalance("2026-05-08");      // 1650
 
 const dailyBudget = getRemainingDailyBudget();       // 86.96
+const status = getDailyBudgetStatus();               // "positivo"
 ```
 
 ## 5. Como o mês é extraído
@@ -92,7 +96,19 @@ Se `diasRestantes === 0` (último dia do mês), retorna o saldo restante (`recei
 | `= 0` | Orçamento equilibrado — sem folga |
 | `< 0` | Já estourou o orçamento — déficit de `valor × diasRestantes` |
 
-## 7. Exemplo em um componente React
+## 7. Classificação do orçamento diário
+
+`getDailyBudgetStatus()` é uma função auxiliar que classifica o resultado de `getRemainingDailyBudget()` em um dos três estados:
+
+| Estado | Condição | Significado |
+|---|---|---|
+| `"positivo"` | `dailyBudget > 0` | Há folga no orçamento |
+| `"equilibrado"` | `dailyBudget === 0` | Receitas e despesas se igualam |
+| `"negativo"` | `dailyBudget < 0` | Orçamento já estourou |
+
+Ela não recebe parâmetros e depende exclusivamente de `getRemainingDailyBudget()`.
+
+## 8. Exemplo em um componente React
 
 ```tsx
 import { useState } from "react";
@@ -128,7 +144,7 @@ export default function MonthSummary() {
 3. As 3 funções do serviço recebem a string, extraem mês/ano e retornam os totais
 4. O componente apenas consome os números — não precisa saber como mês/ano são extraídos
 
-## 8. Regras
+## 9. Regras
 
 - Qualquer string ISO válida funciona: `"2026-05-08"`, `"2026-01-01"`, `"2025-12-31"`
 - O dia no ISO é ignorado — apenas **mês** e **ano** são usados para o filtro
