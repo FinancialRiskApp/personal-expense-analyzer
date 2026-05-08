@@ -40,13 +40,14 @@ export default function AppSidebarNav() {
     >
       <SidebarHeader className="px-5 py-6">
         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-3">
-          <div className="flex size-10 items-center justify-center rounded-full bg-white/10">
-            <div className="size-4 rounded-full border-4 border-cyan-300 border-r-transparent" />
+          <div className="flex h-24 w-24 items-center justify-center rounded-xl bg-slate-50 p-1 overflow-hidden">
+            <img src="/src/assets/time.png" alt="Equipe" className="h-full w-full object-contain" />
           </div>
 
           <div>
-            <p className="text-lg font-semibold tracking-tight text-white">InPay</p>
-            <p className="text-xs text-slate-300">Controle financeiro</p>
+            <p className="text-lg font-semibold tracking-tight text-gray-800">
+              Personal Expense Analyzer
+            </p>
           </div>
         </div>
       </SidebarHeader>
@@ -65,8 +66,8 @@ export default function AppSidebarNav() {
                         className="h-11 rounded-2xl px-4 text-slate-200 hover:bg-white/10 hover:text-white data-[active=true]:bg-white data-[active=true]:text-slate-900"
                       >
                         <span>
-                        <item.icon className={isActive ? "text-sky-600" : "text-slate-300"} />
-                        <span className="font-medium">{item.label}</span>
+                          <item.icon className={isActive ? "text-sky-600" : "text-slate-300"} />
+                          <span className="font-medium">{item.label}</span>
                         </span>
                       </SidebarMenuButton>
                     )}
@@ -77,16 +78,6 @@ export default function AppSidebarNav() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-
-      <SidebarFooter className="px-4 py-5">
-        <SidebarSeparator className="mx-0 bg-white/10" />
-        <div className="rounded-2xl bg-white/5 px-4 py-4">
-          <p className="text-sm font-medium text-white">Painel financeiro</p>
-          <p className="mt-1 text-xs leading-5 text-slate-300">
-            Navegue entre visão geral, entradas e despesas.
-          </p>
-        </div>
-      </SidebarFooter>
     </Sidebar>
   );
 }

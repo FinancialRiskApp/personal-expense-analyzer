@@ -11,10 +11,10 @@ export default function CreateIncomeButton({ onClick }: CreateIncomeButtonProps)
     <Button
       type="button"
       onClick={onClick}
-      className="h-11 rounded-2xl bg-sky-700 px-5 text-white hover:bg-sky-800"
+      className="h-11 rounded-2xl bg-green-700 px-5 text-white hover:bg-green-800"
     >
       <PlusIcon />
-      Nova receita
+      Nova entrada
     </Button>
   );
 }
