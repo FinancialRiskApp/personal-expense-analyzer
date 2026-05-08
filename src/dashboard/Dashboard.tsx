@@ -7,7 +7,7 @@ import SmartInsightsCard from "./cards/SmartInsightsCard";
 export default function Dashboard() {
      
   return (
-    <div className="flex flex-wrap gap-5 w-full mx-auto bg-pink-400 h-full">
+    <div className="flex flex-wrap gap-5 w-full mx-auto h-full">
       
         <SpendingDistributionCard />
         <FinancialScoreCard />
