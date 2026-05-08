@@ -1,8 +1,17 @@
+import { useState } from "react";
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
+import CreateIncomeDialog from "./CreateIncomeDialog";
+import IncomeHeader from "./IncomeHeader";
+
 export default function IncomePage() {
+  const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
+
   return (
     <section className="space-y-6">
+      <IncomeHeader onCreateIncome={() => setIsCreateDialogOpen(true)} />
+
       <Card className="border-slate-200/80 bg-white/90 shadow-[0_20px_60px_-40px_rgba(15,23,42,0.35)]">
         <CardHeader>
           <CardTitle>Renda</CardTitle>
@@ -17,6 +26,8 @@ export default function IncomePage() {
           </div>
         </CardContent>
       </Card>
+
+      <CreateIncomeDialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen} />
     </section>
   );
 }

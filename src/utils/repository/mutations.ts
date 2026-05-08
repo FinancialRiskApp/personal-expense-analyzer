@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 import type { Transaction, CreateTransactionPayload, UpdateTransactionPayload } from "../types/transactions";
 import { TRANSACTIONS_STORAGE_KEY } from "./constants";
 import { sortTransactionsByDateDesc } from "./date";
@@ -15,6 +17,7 @@ export function createTransaction(payload: CreateTransactionPayload): Transactio
 
   const newTransaction: Transaction = {
     id: generateNextId(transactions),
+    data: dayjs().format("YYYY-MM-DD"),
     ...payload,
   };
 

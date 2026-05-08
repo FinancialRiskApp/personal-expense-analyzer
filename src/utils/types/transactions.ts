@@ -9,7 +9,7 @@ export type Transaction = {
   tipo: TransactionType;
 };
 
-export type CreateTransactionPayload = Omit<Transaction, "id">;
+export type CreateTransactionPayload = Omit<Transaction, "id" | "data">;
 
 export type UpdateTransactionPayload = Partial<CreateTransactionPayload>;
 
