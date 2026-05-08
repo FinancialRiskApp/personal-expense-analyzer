@@ -1,18 +1,7 @@
-import { useState } from "react";
-
-import Dashboard from "./dashboard/Dashboard";
-import LayoutSideBar from "./dashboard/sidebar/LayoutSideBar";
+import AppRoutes from "@/app/routes";
 
 function App() {
-  const [rendaMensal, setRendaMensal] = useState(10000);
-
-  return (
-    <div className="container items-center m-auto max-w-[90vw]">
-      <LayoutSideBar rendaMensal={rendaMensal} setRendaMensal={setRendaMensal}>
-        <Dashboard rendaMensal={rendaMensal} />
-      </LayoutSideBar>
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
