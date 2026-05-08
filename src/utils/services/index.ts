@@ -33,6 +33,16 @@ export function getMonthBalance(date: string): number {
   return getMonthlyIncome(date) - getMonthlyExpenses(date);
 }
 
+export type DailyBudgetStatus = "negativo" | "equilibrado" | "positivo";
+
+export function getDailyBudgetStatus(): DailyBudgetStatus {
+  const dailyBudget = getRemainingDailyBudget();
+
+  if (dailyBudget > 0) return "positivo";
+  if (dailyBudget === 0) return "equilibrado";
+  return "negativo";
+}
+
 export function getRemainingDailyBudget(): number {
   const today = dayjs();
   const income = getMonthlyIncome(today.format("YYYY-MM-DD"));

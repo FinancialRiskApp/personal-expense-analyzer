@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { getRemainingDailyBudget } from "./index";
+import { getRemainingDailyBudget, getDailyBudgetStatus } from "./index";
 
 const { mockListIncome, mockListExpense } = vi.hoisted(() => ({
   mockListIncome: vi.fn(),
@@ -69,5 +69,46 @@ describe("getRemainingDailyBudget", () => {
     const result = getRemainingDailyBudget();
 
     expect(result).toBe(0);
+  });
+});
+
+describe("getDailyBudgetStatus", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
+    vi.clearAllMocks();
+  });
+
+  it('returns "positivo" when there is a positive daily budget', () => {
+    vi.setSystemTime(new Date(2026, 4, 8));
+    mockListIncome.mockReturnValue([{ valor: 3000 }]);
+    mockListExpense.mockReturnValue([{ valor: 1000 }]);
+
+    const result = getDailyBudgetStatus();
+
+    expect(result).toBe("positivo");
+  });
+
+  it('returns "equilibrado" when budget is balanced', () => {
+    vi.setSystemTime(new Date(2026, 4, 1));
+    mockListIncome.mockReturnValue([{ valor: 3000 }]);
+    mockListExpense.mockReturnValue([{ valor: 3000 }]);
+
+    const result = getDailyBudgetStatus();
+
+    expect(result).toBe("equilibrado");
+  });
+
+  it('returns "negativo" when already over budget', () => {
+    vi.setSystemTime(new Date(2026, 4, 8));
+    mockListIncome.mockReturnValue([{ valor: 3000 }]);
+    mockListExpense.mockReturnValue([{ valor: 3500 }]);
+
+    const result = getDailyBudgetStatus();
+
+    expect(result).toBe("negativo");
   });
 });
