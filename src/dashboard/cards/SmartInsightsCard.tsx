@@ -1,0 +1,43 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BarChart3, PieChart, TrendingUp } from "lucide-react";
+
+export default function SmartInsightsCard() {
+  return (
+    <Card className="min-w-[200px] max-w-[350px] min-h-[400px] max-h-[500px]">
+      <CardHeader>
+        <CardTitle className="text-lg">Insights Inteligentes</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="flex flex-col justify-evenly gap-4 w-full ">
+          <div className="flex justify-between p-2 border-2 border-zinc-300 rounded-sm">
+            <div className="flex items-center justify-center w-10">
+              <TrendingUp />
+            </div>
+            <div className="w-58">
+              <h2>Titulo do alerta</h2>
+              <p>mensagem</p>
+            </div>
+          </div>
+          <div className="flex justify-between p-2 border-2 border-zinc-300 rounded-sm">
+            <div className="flex items-center justify-center w-10">
+              <PieChart />
+            </div>
+            <div className="w-58">
+              <h2>Titulo do alerta</h2>
+              <p>mensagem</p>
+            </div>
+          </div>
+          <div className="flex justify-between p-2 border-2 border-zinc-300 rounded-sm">
+            <div className="flex items-center justify-center w-10">
+              <BarChart3 />
+            </div>
+            <div className="w-58">
+              <h2>Titulo do alerta</h2>
+              <p>mensagem</p>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}

@@ -1,30 +1,31 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { TrendingDown, TrendingUp, Wallet } from "lucide-react";
 
 export default function FinancialProjectionCard() {
   return (
-    <Card>
+    <Card className="min-w-[200px] max-w-[450px] min-h-[200px] max-h-[500px]">
       <CardHeader>
         <CardTitle className="text-lg">Projeção Financeira</CardTitle>
       </CardHeader>
-      <CardContent>
-        <div>
-          <div>
-            {/* icon */}
+      <CardContent className="flex flex-col gap-10">
+        <div className="flex justify-evenly">
+          <div className="flex flex-col items-center text-sm">
+            <Wallet />
             <span>Renda do Mês</span>
             <span>R$ 8500,00</span>
           </div>
-          <div>
-            {/* icon */}
+          <div className="flex flex-col items-center text-sm">
+            <TrendingDown />
             <span>Gastos Atuais</span>
             <span>R$ 6500,00</span>
           </div>
-          <div>
-            {/* icon */}
+          <div className="flex flex-col items-center text-sm">
+           <TrendingUp />
             <span>Saldo Atual</span>
             <span>R$ 2000,00</span>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col gap-4 p-2 border-2 border-zinc-300 rounded-sm">
           <h2>Saldo Projetado fim do mês</h2>
           <p>valor</p>
           <span>Mensagem</span>

@@ -3,7 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 
 export default function SpendingDistributionCard() {
   return (
-    <Card>
+    <Card className="min-w-[200px] max-w-[300px] min-h-[400px] max-h-[500px]">
       <CardHeader>
         <CardTitle className="text-lg">Distribuição de Gastos</CardTitle>
       </CardHeader>
@@ -11,7 +11,7 @@ export default function SpendingDistributionCard() {
         <PieChartWithCustomizedLabel />
       </CardContent>
       <CardFooter>
-        <div className="flex justify-evenly w-full">
+        <div className="flex justify-evenly w-full bg-amber-200">
           <div>
             <p>Moradia</p>
             <p>Alimentação</p>

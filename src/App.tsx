@@ -3,7 +3,7 @@ import Dashboard from "./dashboard/Dashboard";
 
 function App() {
   return (
-    <div className="container items-center m-auto max-w-[90vw] bg-yellow-200">
+    <div className="container items-center mx-auto max-w-[80vw]">
       <LayoutSideBar>
         <Dashboard />
       </LayoutSideBar>

@@ -1,23 +1,20 @@
-import { useContext } from "react";
-import FinancialProfileContext from "@/context/FinancialProfileContext";
-import SpendingDistributionCard from "./SpendingDistributionCard";
-import FinancialScoreCard from "./FinancialScoreCard";
+import SpendingDistributionCard from "./cards/SpendingDistributionCard";
+import FinancialScoreCard from "./cards/FinancialScoreCard";
+import FinancialProjectionCard from "./cards/FinancialProjectionCards";
+import RiskAlertsCard from "./cards/RiskAlertsCard";
+import SmartInsightsCard from "./cards/SmartInsightsCard";
 
 export default function Dashboard() {
-      const { financialProfile } = useContext(FinancialProfileContext);
-
+     
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="text-3xl font-bold">Aqui vem a tela principal</h1>
-
-      {/* TESTE */}
-      <p>{JSON.stringify(financialProfile)}</p>
-
-      {/* AREA DE CARDS */}
-      <div className="flex gap-10">
+    <div className="flex flex-wrap gap-5 w-full mx-auto bg-pink-400 h-full">
+      
         <SpendingDistributionCard />
         <FinancialScoreCard />
-      </div>
+        <FinancialProjectionCard />
+        <RiskAlertsCard />
+        <SmartInsightsCard />
+      
     </div>
   );
 }
