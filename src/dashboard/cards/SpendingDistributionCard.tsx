@@ -3,7 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 
 export default function SpendingDistributionCard() {
   return (
-    <Card>
+    <Card className="min-w-[280px] max-w-[300px] min-h-[400px] max-h-[500px]">
       <CardHeader>
         <CardTitle className="text-lg">Distribuição de Gastos</CardTitle>
       </CardHeader>

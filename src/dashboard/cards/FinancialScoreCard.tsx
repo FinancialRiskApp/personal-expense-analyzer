@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 export default function FinancialScoreCard() {
   return (
-    <Card>
+    <Card className="min-w-[200px] max-w-[300px] min-h-[400px] max-h-[500px]">
       <CardHeader>
         <CardTitle className="text-lg">Score Financeiro</CardTitle>
         <CardDescription>Mês atual</CardDescription>
