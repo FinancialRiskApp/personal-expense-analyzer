@@ -68,14 +68,14 @@ export default function ExpensesPage() {
   }
 
   return (
-    <section className="space-y-6">
+    <section className="w-full space-y-6 px-4 py-4 sm:px-6 lg:px-8">
       <ExpenseHeader onCreateExpense={() => setIsCreateDialogOpen(true)} />
 
       <Card className="border-slate-200/80 bg-white/90 shadow-[0_20px_60px_-40px_rgba(15,23,42,0.35)]">
-        <CardHeader className="flex flex-row items-center justify-between gap-4">
+        <CardHeader className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <CardTitle>Lançamentos do mês</CardTitle>
 
-          <div className="flex items-center gap-2">
+          <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center">
             <label htmlFor="month-filter" className="text-sm font-medium text-slate-600">
               Mês
             </label>
@@ -84,7 +84,7 @@ export default function ExpensesPage() {
               id="month-filter"
               value={selectedMonth}
               onChange={(event) => setSelectedMonth(event.target.value)}
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
+              className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100 sm:w-auto"
             >
               {availableMonths.map((availableMonth) => {
                 const value = `${availableMonth.year}-${availableMonth.month}`;
@@ -100,14 +100,14 @@ export default function ExpensesPage() {
           </div>
         </CardHeader>
 
-        <CardContent>
+        <CardContent className="overflow-x-hidden">
           {transactions.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-5 py-10 text-center text-sm text-slate-500">
               Nenhum lançamento encontrado para o mês selecionado.
             </div>
           ) : (
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-              <table className="w-full text-sm">
+            <div className="w-full overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+              <table className="w-full min-w-[760px] text-sm">
                 <thead className="bg-slate-50 text-left text-slate-600">
                   <tr>
                     <th className="px-4 py-3 font-medium">Tipo</th>
