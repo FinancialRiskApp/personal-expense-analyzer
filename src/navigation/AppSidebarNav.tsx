@@ -63,10 +63,10 @@ export default function AppSidebarNav() {
                       <SidebarMenuButton
                         asChild
                         isActive={isActive}
-                        className="h-11 rounded-2xl px-4 text-slate-200 hover:bg-white/10 hover:text-white data-[active=true]:bg-white data-[active=true]:text-slate-900"
+                        className="h-11 rounded-2xl px-4 text-slate-400 hover:bg-white/10 hover:text-green-600 data-[active=true]:bg-white data-[active=true]:text-slate-700"
                       >
                         <span>
-                          <item.icon className={isActive ? "text-sky-600" : "text-slate-300"} />
+                          <item.icon className={isActive ? "text-green-600" : "text-slate-300"} />
                           <span className="font-medium">{item.label}</span>
                         </span>
                       </SidebarMenuButton>
