@@ -2,11 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
-import {
-  Field,
-  FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 
 import { type IncomeFormData, incomeFormSchema } from "./income.schema";
@@ -26,6 +22,7 @@ export default function IncomeForm({ onSubmit, onCancel }: IncomeFormProps) {
     resolver: zodResolver(incomeFormSchema),
     mode: "onChange",
     defaultValues: {
+      data: "2026-05",
       valor: "",
     },
   });
@@ -44,7 +41,13 @@ export default function IncomeForm({ onSubmit, onCancel }: IncomeFormProps) {
     <form onSubmit={handleSubmit(handleFormSubmit)} className="px-6 pb-6">
       <FieldGroup>
         <Field>
-          <FieldLabel htmlFor="income-value">Valor da receita</FieldLabel>
+          <FieldLabel htmlFor="income-month">Mês</FieldLabel>
+          <Input id="income-month" type="month" {...register("data")} />
+          {errors.data && <p className="text-sm text-red-500">{errors.data.message}</p>}
+        </Field>
+
+        <Field>
+          <FieldLabel htmlFor="income-value">Valor da entrada</FieldLabel>
           <Input
             id="income-value"
             type="number"
@@ -59,8 +62,9 @@ export default function IncomeForm({ onSubmit, onCancel }: IncomeFormProps) {
           <Button type="button" variant="outline" onClick={handleCancel}>
             Cancelar
           </Button>
-          <Button type="submit" disabled={isSubmitting}>
-            Salvar receita
+
+          <Button className="bg-green-700 hover:bg-green-800" type="submit" disabled={isSubmitting}>
+            Salvar entrada
           </Button>
         </div>
       </FieldGroup>

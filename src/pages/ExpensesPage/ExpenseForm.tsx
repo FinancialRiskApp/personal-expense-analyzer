@@ -2,11 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
-import {
-  Field,
-  FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
@@ -29,6 +25,7 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
     resolver: zodResolver(expenseFormSchema),
     mode: "onChange",
     defaultValues: {
+      data: "2026-05",
       valor: "",
       descricao: "",
       categoria: "",
@@ -49,6 +46,12 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
     <form onSubmit={handleSubmit(handleFormSubmit)} className="px-6 pb-6">
       <FieldGroup>
         <Field>
+          <FieldLabel htmlFor="expense-month">Mês</FieldLabel>
+          <Input id="expense-month" type="month" {...register("data")} />
+          {errors.data && <p className="text-sm text-red-500">{errors.data.message}</p>}
+        </Field>
+
+        <Field>
           <FieldLabel htmlFor="expense-description">Descrição</FieldLabel>
           <Input
             id="expense-description"
@@ -65,11 +68,17 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
             name="categoria"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="grid grid-cols-2 gap-2 pt-1">
+              <RadioGroup
+                value={field.value}
+                onValueChange={field.onChange}
+                className="grid grid-cols-2 gap-2 pt-1"
+              >
                 {EXPENSE_CATEGORIES.map((category) => (
                   <div key={category} className="flex items-center gap-2">
                     <RadioGroupItem value={category} id={`cat-${category}`} />
-                    <Label htmlFor={`cat-${category}`} className="text-sm font-normal">{category}</Label>
+                    <Label htmlFor={`cat-${category}`} className="text-sm font-normal">
+                      {category}
+                    </Label>
                   </div>
                 ))}
               </RadioGroup>
@@ -94,7 +103,8 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
           <Button type="button" variant="outline" onClick={handleCancel}>
             Cancelar
           </Button>
-          <Button type="submit" disabled={isSubmitting}>
+
+          <Button className="bg-green-700 hover:bg-green-800" type="submit" disabled={isSubmitting}>
             Salvar despesa
           </Button>
         </div>
