@@ -33,48 +33,66 @@ function formatCurrency(value: number) {
 
 function calculateScore(totalEntradas: number, totalSaidas: number) {
   if (totalEntradas <= 0 && totalSaidas > 0) {
-    return 25;
+    return 20;
   }
 
-  if (totalEntradas <= 0) {
+  if (totalEntradas <= 0 && totalSaidas <= 0) {
     return 50;
   }
 
   const expenseRatio = totalSaidas / totalEntradas;
 
-  if (expenseRatio <= 0.55) {
-    return 90;
-  }
+  const score = 100 - expenseRatio * 70;
 
-  if (expenseRatio <= 0.7) {
-    return 75;
-  }
-
-  if (expenseRatio <= 0.9) {
-    return 55;
-  }
-
-  if (expenseRatio <= 1) {
-    return 40;
-  }
-
-  return 20;
+  return Math.max(0, Math.min(100, Math.round(score)));
 }
 
 function getScoreLabel(score: number) {
-  if (score >= 80) {
+  if (score >= 75) {
     return "Saúde financeira boa";
   }
 
-  if (score >= 60) {
+  if (score >= 50) {
     return "Atenção moderada";
   }
 
-  if (score >= 40) {
+  if (score >= 30) {
     return "Risco financeiro elevado";
   }
 
   return "Risco financeiro crítico";
+}
+
+function getScoreClasses(score: number) {
+  if (score >= 75) {
+    return {
+      bar: "bg-emerald-600",
+      badge: "bg-emerald-50 text-emerald-700",
+      text: "text-emerald-700",
+    };
+  }
+
+  if (score >= 50) {
+    return {
+      bar: "bg-yellow-500",
+      badge: "bg-yellow-50 text-yellow-700",
+      text: "text-yellow-700",
+    };
+  }
+
+  if (score >= 30) {
+    return {
+      bar: "bg-orange-500",
+      badge: "bg-orange-50 text-orange-700",
+      text: "text-orange-700",
+    };
+  }
+
+  return {
+    bar: "bg-red-600",
+    badge: "bg-red-50 text-red-700",
+    text: "text-red-700",
+  };
 }
 
 function getExpenseRatio(totalEntradas: number, totalSaidas: number) {
@@ -158,6 +176,8 @@ export default function Dashboard() {
 
   const score = calculateScore(summary.totalEntradas, summary.totalSaidas);
   const scoreLabel = getScoreLabel(score);
+  const scoreClasses = getScoreClasses(score);
+
   const expenseRatio = getExpenseRatio(summary.totalEntradas, summary.totalSaidas);
 
   const highestExpenseCategory = useMemo(() => getHighestExpenseCategory(expenses), [expenses]);
@@ -172,6 +192,9 @@ export default function Dashboard() {
       <div className="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm lg:flex-row lg:items-center lg:justify-between">
         <div>
           <h2 className="text-2xl font-bold text-slate-900">Dashboard financeiro</h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Acompanhe entradas, saídas, saldo e risco financeiro do mês.
+          </p>
         </div>
 
         <div className="flex items-center gap-2">
@@ -229,7 +252,17 @@ export default function Dashboard() {
 
         <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
           <p className="text-sm font-medium text-slate-500">Comprometimento da renda</p>
-          <p className="mt-3 text-2xl font-bold text-slate-900">{expenseRatio}%</p>
+          <p
+            className={
+              expenseRatio >= 90
+                ? "mt-3 text-2xl font-bold text-red-600"
+                : expenseRatio >= 70
+                  ? "mt-3 text-2xl font-bold text-orange-600"
+                  : "mt-3 text-2xl font-bold text-emerald-700"
+            }
+          >
+            {expenseRatio}%
+          </p>
         </div>
       </div>
 
@@ -243,7 +276,7 @@ export default function Dashboard() {
               </p>
             </div>
 
-            <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
+            <span className={`rounded-full px-3 py-1 text-sm font-medium ${scoreClasses.badge}`}>
               {score}/100
             </span>
           </div>
@@ -251,18 +284,12 @@ export default function Dashboard() {
           <div className="mt-6">
             <div className="h-3 overflow-hidden rounded-full bg-slate-100">
               <div
-                className={
-                  score >= 80
-                    ? "h-full rounded-full bg-emerald-600"
-                    : score >= 60
-                      ? "h-full rounded-full bg-yellow-500"
-                      : "h-full rounded-full bg-red-600"
-                }
+                className={`h-full rounded-full ${scoreClasses.bar}`}
                 style={{ width: `${score}%` }}
               />
             </div>
 
-            <p className="mt-4 text-base font-semibold text-slate-900">{scoreLabel}</p>
+            <p className={`mt-4 text-base font-semibold ${scoreClasses.text}`}>{scoreLabel}</p>
 
             <p className="mt-1 text-sm text-slate-500">
               Quanto menor o percentual de gastos em relação às entradas, melhor tende a ser o score
