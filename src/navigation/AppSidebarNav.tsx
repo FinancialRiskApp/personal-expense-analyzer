@@ -1,17 +1,15 @@
-import { Landmark, LayoutDashboard, ReceiptText } from "lucide-react";
+import { LayoutDashboard, ReceiptText } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarSeparator,
 } from "@/components/ui/sidebar";
 
 const navigationItems = [
@@ -21,13 +19,8 @@ const navigationItems = [
     icon: LayoutDashboard,
   },
   {
-    to: "/renda",
-    label: "Renda",
-    icon: Landmark,
-  },
-  {
-    to: "/gastos",
-    label: "Gastos",
+    to: "/transacoes",
+    label: "Transações",
     icon: ReceiptText,
   },
 ];

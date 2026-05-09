@@ -1,19 +1,21 @@
-type ExpenseItem = {
-  id: string;
-  mes: string;
-  descricao: string;
-  categoria: string;
-  tipo: "entrada" | "saida";
-  valor: number;
+import dayjs from "dayjs";
+
+import type { Transaction } from "@/utils/types/transactions";
+
+type TransactionListProps = {
+  transactions: Transaction[];
+  onDelete: (id: number) => void;
 };
 
-type ExpenseListProps = {
-  items: ExpenseItem[];
-  onDelete?: (id: string) => void;
-};
+function formatCurrency(value: number) {
+  return value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+}
 
-export default function ExpenseList({ items, onDelete }: ExpenseListProps) {
-  if (items.length === 0) {
+export default function TransactionList({ transactions, onDelete }: TransactionListProps) {
+  if (transactions.length === 0) {
     return (
       <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-5 py-10 text-center text-sm text-slate-500">
         Nenhum lançamento encontrado para o mês selecionado.
@@ -22,12 +24,12 @@ export default function ExpenseList({ items, onDelete }: ExpenseListProps) {
   }
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-      <table className="w-full text-sm">
+    <div className="w-full overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+      <table className="w-full min-w-[760px] text-sm">
         <thead className="bg-slate-50 text-left text-slate-600">
           <tr>
             <th className="px-4 py-3 font-medium">Tipo</th>
-            <th className="px-4 py-3 font-medium">Mês</th>
+            <th className="px-4 py-3 font-medium">Data</th>
             <th className="px-4 py-3 font-medium">Descrição</th>
             <th className="px-4 py-3 font-medium">Categoria</th>
             <th className="px-4 py-3 font-medium">Valor</th>
@@ -36,32 +38,38 @@ export default function ExpenseList({ items, onDelete }: ExpenseListProps) {
         </thead>
 
         <tbody>
-          {items.map((item) => (
-            <tr key={item.id} className="border-t border-slate-100">
+          {transactions.map((transaction) => (
+            <tr key={transaction.id} className="border-t border-slate-100">
               <td className="px-4 py-3">
                 <span
                   className={
-                    item.tipo === "entrada"
+                    transaction.tipo === "entrada"
                       ? "rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700"
                       : "rounded-full bg-red-50 px-3 py-1 text-xs font-medium text-red-700"
                   }
                 >
-                  {item.tipo === "entrada" ? "Entrada" : "Saída"}
+                  {transaction.tipo === "entrada" ? "Entrada" : "Saída"}
                 </span>
               </td>
 
-              <td className="px-4 py-3 text-slate-600">{item.mes}</td>
+              <td className="px-4 py-3 text-slate-600">
+                {dayjs(transaction.data).format("DD/MM/YYYY")}
+              </td>
 
-              <td className="px-4 py-3 font-medium text-slate-800">{item.descricao}</td>
+              <td className="px-4 py-3 font-medium text-slate-800">
+                {transaction.descricao}
+              </td>
 
-              <td className="px-4 py-3 text-slate-600">{item.categoria}</td>
+              <td className="px-4 py-3 text-slate-600">{transaction.categoria}</td>
 
-              <td className="px-4 py-3 font-semibold text-slate-900">R$ {item.valor.toFixed(2)}</td>
+              <td className="px-4 py-3 font-semibold text-slate-900">
+                {formatCurrency(transaction.valor)}
+              </td>
 
               <td className="px-4 py-3 text-right">
                 <button
                   type="button"
-                  onClick={() => onDelete?.(item.id)}
+                  onClick={() => onDelete(transaction.id)}
                   className="rounded-lg px-3 py-1 text-xs font-medium text-red-600 hover:bg-red-50"
                 >
                   Apagar
