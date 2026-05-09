@@ -1,5 +1,6 @@
 import { LayoutDashboard, ReceiptText } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import timeImage from "@/assets/time.png";
 
 import {
   Sidebar,
@@ -34,7 +35,7 @@ export default function AppSidebarNav() {
       <SidebarHeader className="px-5 py-6">
         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-3">
           <div className="flex h-24 w-24 items-center justify-center rounded-xl bg-slate-50 p-1 overflow-hidden">
-            <img src="/src/assets/time.png" alt="Equipe" className="h-full w-full object-contain" />
+            <img src={timeImage} alt="Equipe" className="h-full w-full object-contain" />
           </div>
 
           <div>
