@@ -25,6 +25,7 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
     resolver: zodResolver(expenseFormSchema),
     mode: "onChange",
     defaultValues: {
+      data: "2026-05",
       valor: "",
       descricao: "",
       categoria: "",
@@ -44,6 +45,12 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)} className="px-6 pb-6">
       <FieldGroup>
+        <Field>
+          <FieldLabel htmlFor="expense-month">Mês</FieldLabel>
+          <Input id="expense-month" type="month" {...register("data")} />
+          {errors.data && <p className="text-sm text-red-500">{errors.data.message}</p>}
+        </Field>
+
         <Field>
           <FieldLabel htmlFor="expense-description">Descrição</FieldLabel>
           <Input
@@ -96,6 +103,7 @@ export default function ExpenseForm({ onSubmit, onCancel }: ExpenseFormProps) {
           <Button type="button" variant="outline" onClick={handleCancel}>
             Cancelar
           </Button>
+
           <Button className="bg-green-700 hover:bg-green-800" type="submit" disabled={isSubmitting}>
             Salvar despesa
           </Button>

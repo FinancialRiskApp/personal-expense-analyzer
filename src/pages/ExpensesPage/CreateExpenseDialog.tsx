@@ -13,17 +13,24 @@ import type { ExpenseFormData } from "./expense.schema";
 type CreateExpenseDialogProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  onCreated?: () => void;
 };
 
-export default function CreateExpenseDialog({ open, onOpenChange }: CreateExpenseDialogProps) {
+export default function CreateExpenseDialog({
+  open,
+  onOpenChange,
+  onCreated,
+}: CreateExpenseDialogProps) {
   function handleSubmit(data: ExpenseFormData) {
     createTransaction({
+      data: `${data.data}-01`,
       descricao: data.descricao,
       categoria: data.categoria,
       tipo: "saida",
       valor: Number(data.valor),
     });
 
+    onCreated?.();
     onOpenChange(false);
   }
 

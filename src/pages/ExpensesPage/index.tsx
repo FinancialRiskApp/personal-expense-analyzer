@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import dayjs from "dayjs";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import CreateExpenseDialog from "./CreateExpenseDialog";
 import ExpenseHeader from "./ExpenseHeader";
 
-const months = [
+import {
+  deleteTransaction,
+  getAvailableMonths,
+  getLatestAvailableMonth,
+  listTransactionsByMonth,
+} from "@/utils/repository";
+
+import type { Transaction } from "@/utils/types/transactions";
+
+const monthNames = [
   "Janeiro",
   "Fevereiro",
   "Março",
@@ -20,54 +30,41 @@ const months = [
   "Dezembro",
 ];
 
-const mockTransactions = [
-  {
-    id: 1,
-    tipo: "entrada",
-    mes: "Maio",
-    descricao: "Salário",
-    categoria: "Renda",
-    valor: 3500,
-  },
-  {
-    id: 2,
-    tipo: "saida",
-    mes: "Maio",
-    descricao: "Mercado",
-    categoria: "Alimentação",
-    valor: 420,
-  },
-  {
-    id: 3,
-    tipo: "saida",
-    mes: "Maio",
-    descricao: "Uber",
-    categoria: "Transporte",
-    valor: 38,
-  },
-  {
-    id: 4,
-    tipo: "saida",
-    mes: "Junho",
-    descricao: "Internet",
-    categoria: "Moradia",
-    valor: 120,
-  },
-];
+function formatCurrency(value: number) {
+  return value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+}
 
 export default function ExpensesPage() {
-  const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
-  const [selectedMonth, setSelectedMonth] = useState("Maio");
-  const [transactions, setTransactions] = useState(mockTransactions);
+  const latestMonth = getLatestAvailableMonth();
 
-  const filteredTransactions = transactions.filter(
-    (transaction) => transaction.mes === selectedMonth,
+  const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
+
+  const [selectedMonth, setSelectedMonth] = useState(
+    latestMonth ? `${latestMonth.year}-${latestMonth.month}` : "2026-5",
   );
 
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
+
+  const availableMonths = getAvailableMonths();
+
+  function loadTransactions() {
+    const [year, month] = selectedMonth.split("-").map(Number);
+
+    const monthlyTransactions = listTransactionsByMonth(month, year);
+
+    setTransactions(monthlyTransactions);
+  }
+
+  useEffect(() => {
+    loadTransactions();
+  }, [selectedMonth]);
+
   function handleDeleteTransaction(id: number) {
-    setTransactions((currentTransactions) =>
-      currentTransactions.filter((transaction) => transaction.id !== id),
-    );
+    deleteTransaction(id);
+    loadTransactions();
   }
 
   return (
@@ -89,17 +86,22 @@ export default function ExpensesPage() {
               onChange={(event) => setSelectedMonth(event.target.value)}
               className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
             >
-              {months.map((month) => (
-                <option key={month} value={month}>
-                  {month}
-                </option>
-              ))}
+              {availableMonths.map((availableMonth) => {
+                const value = `${availableMonth.year}-${availableMonth.month}`;
+                const label = `${monthNames[availableMonth.month - 1]} / ${availableMonth.year}`;
+
+                return (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                );
+              })}
             </select>
           </div>
         </CardHeader>
 
         <CardContent>
-          {filteredTransactions.length === 0 ? (
+          {transactions.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-5 py-10 text-center text-sm text-slate-500">
               Nenhum lançamento encontrado para o mês selecionado.
             </div>
@@ -109,7 +111,7 @@ export default function ExpensesPage() {
                 <thead className="bg-slate-50 text-left text-slate-600">
                   <tr>
                     <th className="px-4 py-3 font-medium">Tipo</th>
-                    <th className="px-4 py-3 font-medium">Mês</th>
+                    <th className="px-4 py-3 font-medium">Data</th>
                     <th className="px-4 py-3 font-medium">Descrição</th>
                     <th className="px-4 py-3 font-medium">Categoria</th>
                     <th className="px-4 py-3 font-medium">Valor</th>
@@ -118,7 +120,7 @@ export default function ExpensesPage() {
                 </thead>
 
                 <tbody>
-                  {filteredTransactions.map((transaction) => (
+                  {transactions.map((transaction) => (
                     <tr key={transaction.id} className="border-t border-slate-100">
                       <td className="px-4 py-3">
                         <span
@@ -132,7 +134,9 @@ export default function ExpensesPage() {
                         </span>
                       </td>
 
-                      <td className="px-4 py-3 text-slate-600">{transaction.mes}</td>
+                      <td className="px-4 py-3 text-slate-600">
+                        {dayjs(transaction.data).format("DD/MM/YYYY")}
+                      </td>
 
                       <td className="px-4 py-3 font-medium text-slate-800">
                         {transaction.descricao}
@@ -141,7 +145,7 @@ export default function ExpensesPage() {
                       <td className="px-4 py-3 text-slate-600">{transaction.categoria}</td>
 
                       <td className="px-4 py-3 font-semibold text-slate-900">
-                        R$ {transaction.valor.toFixed(2)}
+                        {formatCurrency(transaction.valor)}
                       </td>
 
                       <td className="px-4 py-3 text-right">
@@ -162,7 +166,11 @@ export default function ExpensesPage() {
         </CardContent>
       </Card>
 
-      <CreateExpenseDialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen} />
+      <CreateExpenseDialog
+        open={isCreateDialogOpen}
+        onOpenChange={setIsCreateDialogOpen}
+        onCreated={loadTransactions}
+      />
     </section>
   );
 }

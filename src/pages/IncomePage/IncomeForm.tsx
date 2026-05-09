@@ -22,6 +22,7 @@ export default function IncomeForm({ onSubmit, onCancel }: IncomeFormProps) {
     resolver: zodResolver(incomeFormSchema),
     mode: "onChange",
     defaultValues: {
+      data: "2026-05",
       valor: "",
     },
   });
@@ -40,6 +41,12 @@ export default function IncomeForm({ onSubmit, onCancel }: IncomeFormProps) {
     <form onSubmit={handleSubmit(handleFormSubmit)} className="px-6 pb-6">
       <FieldGroup>
         <Field>
+          <FieldLabel htmlFor="income-month">Mês</FieldLabel>
+          <Input id="income-month" type="month" {...register("data")} />
+          {errors.data && <p className="text-sm text-red-500">{errors.data.message}</p>}
+        </Field>
+
+        <Field>
           <FieldLabel htmlFor="income-value">Valor da entrada</FieldLabel>
           <Input
             id="income-value"
@@ -55,6 +62,7 @@ export default function IncomeForm({ onSubmit, onCancel }: IncomeFormProps) {
           <Button type="button" variant="outline" onClick={handleCancel}>
             Cancelar
           </Button>
+
           <Button className="bg-green-700 hover:bg-green-800" type="submit" disabled={isSubmitting}>
             Salvar entrada
           </Button>

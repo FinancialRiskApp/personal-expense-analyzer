@@ -12,14 +12,21 @@ export const EXPENSE_CATEGORIES = [
 ] as const;
 
 export const expenseFormSchema = z.object({
-  valor: z.string().refine((value) => {
-    const numericValue = Number(value);
+  data: z.string().min(1, "Selecione o mês"),
 
-    return !Number.isNaN(numericValue) && numericValue >= 0;
-  }, {
-    message: "Informe um valor numérico maior ou igual a zero",
-  }),
+  valor: z.string().refine(
+    (value) => {
+      const numericValue = Number(value);
+
+      return !Number.isNaN(numericValue) && numericValue >= 0;
+    },
+    {
+      message: "Informe um valor numérico maior ou igual a zero",
+    },
+  ),
+
   descricao: z.string().min(1, "Informe uma descrição"),
+
   categoria: z.string().min(1, "Selecione uma categoria"),
 });
 
