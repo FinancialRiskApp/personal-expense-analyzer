@@ -12,7 +12,7 @@ export default function TransactionsHeader({
   onCreateExpense,
 }: TransactionsHeaderProps) {
   return (
-    <div className="flex flex-col gap-4 rounded-[2rem] border border-slate-200/80 bg-white/90 px-6 py-6 shadow-[0_20px_60px_-40px_rgba(15,23,42,0.35)] md:flex-row md:items-center md:justify-between">
+    <div className="flex flex-col gap-4 rounded-[2rem] border border-slate-200/80 bg-white/90 px-6 py-6 shadow-[0_20px_60px_-40px_rgba(15,23,42,0.35)] sm:flex-row sm:items-center sm:justify-between">
       <div className="space-y-2">
         <h2 className="text-xl font-semibold tracking-tight text-slate-950">Lançamentos</h2>
         <p className="max-w-2xl text-sm leading-6 text-slate-500">
@@ -20,7 +20,7 @@ export default function TransactionsHeader({
         </p>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row">
         <Button
           type="button"
           onClick={onCreateIncome}
