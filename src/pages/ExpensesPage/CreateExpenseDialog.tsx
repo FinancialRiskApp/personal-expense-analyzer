@@ -23,7 +23,6 @@ export default function CreateExpenseDialog({
 }: CreateExpenseDialogProps) {
   function handleSubmit(data: ExpenseFormData) {
     createTransaction({
-      data: `${data.data}-01`,
       descricao: data.descricao,
       categoria: data.categoria,
       tipo: "saida",

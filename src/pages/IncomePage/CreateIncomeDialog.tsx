@@ -23,7 +23,6 @@ export default function CreateIncomeDialog({
 }: CreateIncomeDialogProps) {
   function handleSubmit(data: IncomeFormData) {
     createTransaction({
-      data: `${data.data}-01`,
       descricao: "Receita adicionada manualmente",
       categoria: "Renda",
       tipo: "entrada",
