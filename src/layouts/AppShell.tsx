@@ -8,13 +8,9 @@ const pageCopy = {
     title: "Dashboard",
     description: "Visão geral da sua atividade financeira.",
   },
-  "/renda": {
-    title: "Renda",
-    description: "Acompanhe suas entradas e o histórico de recebimentos.",
-  },
-  "/gastos": {
-    title: "Gastos",
-    description: "Monitore despesas e organize suas saídas financeiras.",
+  "/transacoes": {
+    title: "Transações",
+    description: "Registre e acompanhe todas as suas transações financeiras.",
   },
 } as const;
 
